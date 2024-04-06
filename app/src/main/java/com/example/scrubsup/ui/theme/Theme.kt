@@ -108,6 +108,7 @@ fun ScrubsUpTheme(darkTheme: Boolean = isSystemInDarkTheme(),
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
+        shapes = Shapes,
         content = content,
     )
 }
