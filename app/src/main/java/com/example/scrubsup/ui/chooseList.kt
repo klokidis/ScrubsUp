@@ -41,7 +41,7 @@ fun CardList(cardList: List<Models>, modifier: Modifier = Modifier) {
     ) { it ->
         LazyColumn(contentPadding = it)  {
             items(cardList) { cards ->
-                singleCard(
+                SingleCard(
                     card = cards,
                     modifier = modifier
                         .padding(
@@ -58,7 +58,7 @@ fun CardList(cardList: List<Models>, modifier: Modifier = Modifier) {
 
 
 @Composable
-fun singleCard(card: Models, modifier: Modifier = Modifier) {
+fun SingleCard(card: Models, modifier: Modifier = Modifier) {
     Card(
         modifier = modifier
             .fillMaxWidth()
