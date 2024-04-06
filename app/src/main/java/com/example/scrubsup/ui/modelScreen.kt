@@ -1,4 +1,4 @@
-package com.example.scrubsup.ui.theme
+package com.example.scrubsup.ui
 
 import android.webkit.WebView
 import android.webkit.WebViewClient
