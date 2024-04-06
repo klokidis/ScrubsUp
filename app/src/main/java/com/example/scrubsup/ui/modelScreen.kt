@@ -26,7 +26,7 @@ fun TopAppBar(modifier: Modifier = Modifier) {
         title = {
             Text(
                 text = "heart",
-                style = MaterialTheme.typography.displayLarge
+                style = MaterialTheme.typography.titleLarge
             )
         },
         modifier = modifier
