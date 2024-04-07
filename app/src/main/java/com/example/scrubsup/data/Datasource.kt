@@ -4,7 +4,7 @@ import com.example.scrubsup.R
 import com.example.scrubsup.model.Models
 
 class Datasource(){
-    fun loadModels(): List<Models> {
+    fun loadModels3D(): List<Models> {
         return listOf(
             Models(
                 R.string.brain,

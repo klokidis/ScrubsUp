@@ -11,27 +11,31 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.viewinterop.AndroidView
 import com.example.scrubsup.R
-import com.example.scrubsup.data.Datasource
-import com.example.scrubsup.model.Models
 import com.example.scrubsup.ui.theme.ScrubsUpTheme
 
 @Composable
-fun Screen3D(name: Int, model3D:Models){
+fun ModelScreen3D(
+    viewModel : ViewModel = ViewModel()
+){
+    val uiState by viewModel.uiState.collectAsState()
+
     Column{
-        TopAppBar(LocalContext.current.getString(name))
-        WebViewScreen(model3D.htmlString)
+        TopAppBar(LocalContext.current.getString(uiState.card.stringResourceId))
+        WebViewScreen(uiState.card.htmlString)
     }
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TopAppBar(Text: String,modifier: Modifier = Modifier) {
+fun TopAppBar(text: String, modifier: Modifier = Modifier) {
     CenterAlignedTopAppBar(
         navigationIcon = {
             IconButton(onClick = { /* do something */ }) {
@@ -44,7 +48,7 @@ fun TopAppBar(Text: String,modifier: Modifier = Modifier) {
         },
         title = {
             Text(
-                text = Text,
+                text = text,
                 style = MaterialTheme.typography.titleLarge
             )
         },
@@ -78,6 +82,6 @@ fun WebViewScreen(html: String) {
 @Composable
 fun ModelPreview() {
     ScrubsUpTheme {
-        Screen3D(Datasource().loadOneHtml().stringResourceId,Datasource().loadOneHtml())
+        ModelScreen3D()
     }
 }
