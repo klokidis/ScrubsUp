@@ -3,15 +3,20 @@ package com.example.scrubsup.ui
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.viewinterop.AndroidView
+import com.example.scrubsup.R
 import com.example.scrubsup.data.Datasource
 import com.example.scrubsup.model.Models
 import com.example.scrubsup.ui.theme.ScrubsUpTheme
@@ -28,6 +33,15 @@ fun Screen3D(name: Int, model3D:Models){
 @Composable
 fun TopAppBar(Text: String,modifier: Modifier = Modifier) {
     CenterAlignedTopAppBar(
+        navigationIcon = {
+            IconButton(onClick = { /* do something */ }) {
+                Icon(
+                    painter = painterResource(id = R.drawable.prev),
+                    contentDescription = LocalContext.current.getString(R.string.previous_button),
+                    modifier = Modifier.fillMaxSize()
+                )
+            }
+        },
         title = {
             Text(
                 text = Text,
@@ -62,7 +76,7 @@ fun WebViewScreen(html: String) {
 
 @Preview(showBackground = true)
 @Composable
-fun modelPreview() {
+fun ModelPreview() {
     ScrubsUpTheme {
         Screen3D(Datasource().loadOneHtml().stringResourceId,Datasource().loadOneHtml())
     }

@@ -3,4 +3,6 @@
     <string name="top_bar">Choose</string>
     <string name="heart">heart</string>
     <string name="brain">brain</string>
+    <string name="previous_button">previous button</string>
+    <string name="model_3d">3D models</string>
 </resources>

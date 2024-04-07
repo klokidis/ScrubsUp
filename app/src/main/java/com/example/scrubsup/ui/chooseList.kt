@@ -33,10 +33,10 @@ import com.example.scrubsup.ui.theme.ScrubsUpTheme
 
 
 @Composable
-fun CardList(cardList: List<Models>, modifier: Modifier = Modifier) {
+fun CardList(cardsName: Int,cardList: List<Models>, modifier: Modifier = Modifier) {
     Scaffold(
         topBar ={
-            TopAppBar("3d models")
+            TopAppBar(LocalContext.current.getString(cardsName))
         }
     ) { it ->
         LazyColumn(contentPadding = it)  {
@@ -97,6 +97,6 @@ fun SingleCard(card: Models, modifier: Modifier = Modifier) {
 @Composable
 fun CardPreview() {
     ScrubsUpTheme {
-        CardList(Datasource().loadModels())
+        CardList(R.string.model_3d,Datasource().loadModels())
     }
 }

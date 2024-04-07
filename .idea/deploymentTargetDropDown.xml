@@ -2,10 +2,16 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="CardPreview">
+        <State />
+      </entry>
       <entry key="GreetingPreview">
         <State />
       </entry>
       <entry key="MainActivity">
+        <State />
+      </entry>
+      <entry key="modelPreview">
         <State />
       </entry>
     </value>
