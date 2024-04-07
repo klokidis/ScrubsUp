@@ -36,7 +36,7 @@ fun ChooseList(
     viewModel : ViewModel = ViewModel()
 ){
     val uiState by viewModel.uiState.collectAsState()
-    CardList(uiState.titleBar,viewModel.loadModels())
+    CardList(uiState.titleBar,viewModel.loadModels(uiState.titleBar))
 }
 
 @Composable
