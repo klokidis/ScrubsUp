@@ -1,5 +1,8 @@
 package com.example.scrubsup.ui
 
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import com.example.scrubsup.data.Datasource
@@ -14,6 +17,13 @@ class ViewModel : ViewModel() {
     val uiState: StateFlow<UiState> = _uiState.asStateFlow()
 
     private val cardList3D: List<Models> = Datasource().loadModels3D()
+
+    var html by mutableStateOf("")
+        private set
+
+    fun updateHtml(htmlPressed: String){
+        html = htmlPressed
+    }
 
     fun loadModels(name: Int): List<Models> {
         return cardList3D

@@ -59,6 +59,7 @@ fun TopAppBar(text: String, modifier: Modifier = Modifier) {
 @Composable
 fun WebViewScreen(html: String) {
     AndroidView(
+        modifier = Modifier.fillMaxSize(),
         factory = { context ->
             WebView(context).apply {
                 settings.javaScriptEnabled = true
