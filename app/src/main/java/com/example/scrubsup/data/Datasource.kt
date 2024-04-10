@@ -13,7 +13,7 @@ class Datasource(){
             ),
             Models(
                 R.string.neuron,
-                R.drawable.brain,//CHANGE
+                R.drawable.neuron,
                 "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"neuron network core\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\"  src=\"https://sketchfab.com/models/9b1af8411cf94819af3c60fef1ab6c36/embed?autostart=1&annotation_cycle=3\"> </iframe> </div></body></html>"
                     ),
             Models(
@@ -23,7 +23,7 @@ class Datasource(){
             ),
             Models(
                 R.string.lungs,
-                R.drawable.heart,//CHANGE
+                R.drawable.lungs,
                 "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"Heart and lung animation\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\"  src=\"https://sketchfab.com/models/4fa8da9ce4b74764a37638b033ddbf2a/embed?autostart=1&annotations_visible=1&annotation_cycle=3&ui_infos=0&ui_watermark_link=0&ui_watermark=0\"> </iframe> </div></body></html>"
             )
         )

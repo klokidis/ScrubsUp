@@ -94,7 +94,7 @@ fun SingleCard(card: Models, modifier: Modifier = Modifier) {
                     contentDescription = null, //no need
                     modifier = Modifier
                         .size(width = dimensionResource(R.dimen.image_width), height = dimensionResource(R.dimen.image_height))
-                        .padding(end = dimensionResource(R.dimen.padding_small))
+                        .padding(end = dimensionResource(R.dimen.padding_large))
                         .aspectRatio(1f),
                     contentScale = ContentScale.Crop
                 )
