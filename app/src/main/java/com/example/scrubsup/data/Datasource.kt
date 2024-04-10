@@ -25,6 +25,16 @@ class Datasource(){
                 R.string.lungs,
                 R.drawable.lungs,
                 "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"Heart and lung animation\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\"  src=\"https://sketchfab.com/models/4fa8da9ce4b74764a37638b033ddbf2a/embed?autostart=1&annotations_visible=1&annotation_cycle=3&ui_infos=0&ui_watermark_link=0&ui_watermark=0\"> </iframe> </div></body></html>"
+            ),
+            Models(
+                R.string.Arterial_vessel,
+                R.drawable.blood,
+                "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"Arterial vessel tour\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src=\"https://sketchfab.com/models/246576050a644cb4ae16840922385e39/embed?autostart=1&annotations_visible=1&ui_theme=dark\"> </iframe> </div></body></html>"
+            ),
+            Models(
+                R.string.full_body,
+                R.drawable.body,
+                "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"Animated Full Human Body Anatomy\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src=\"https://sketchfab.com/models/9b0b079953b840bc9a13f524b60041e4/embed?autostart=1\"> </iframe> </div></body></html>"
             )
         )
     }
