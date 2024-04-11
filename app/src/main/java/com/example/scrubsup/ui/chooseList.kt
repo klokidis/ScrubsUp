@@ -6,8 +6,6 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.aspectRatio
-import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -16,17 +14,15 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.dimensionResource
@@ -34,19 +30,17 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.scrubsup.R
+import com.example.scrubsup.TopAppBar
+import com.example.scrubsup.data.Datasource
 import com.example.scrubsup.model.Models
 import com.example.scrubsup.ui.theme.ScrubsUpTheme
 
 @Composable
 fun ChooseList(
-    viewModel : ViewModel = ViewModel()
-){
-    val uiState by viewModel.uiState.collectAsState()
-    CardList(uiState.titleBar,viewModel.loadModels(uiState.titleBar))
-}
+    onButtonCard: (Models) -> Unit,
+    cardList: List<Models> = Datasource().loadModels3D(),
+    topBarName: Int = R.string.top_bar) {
 
-@Composable
-fun CardList(topBarName: Int, cardList: List<Models>, modifier: Modifier = Modifier) {
     Scaffold(
         topBar ={
             TopAppBar(LocalContext.current.getString(topBarName))
@@ -56,7 +50,8 @@ fun CardList(topBarName: Int, cardList: List<Models>, modifier: Modifier = Modif
             items(cardList) { cards ->
                 SingleCard(
                     card = cards,
-                    modifier = modifier
+                    {onButtonCard(cards)},
+                    modifier = Modifier
                         .padding(
                             top = dimensionResource(R.dimen.vertical_card_padding),
                             start = dimensionResource(R.dimen.padding_medium),
@@ -71,8 +66,9 @@ fun CardList(topBarName: Int, cardList: List<Models>, modifier: Modifier = Modif
 
 
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun SingleCard(card: Models, modifier: Modifier = Modifier) {
+fun SingleCard(card: Models,onButtonCard: () -> Unit, modifier: Modifier = Modifier) {
     Card(
         modifier = modifier
             .fillMaxWidth()
@@ -80,6 +76,7 @@ fun SingleCard(card: Models, modifier: Modifier = Modifier) {
             .clip(MaterialTheme.shapes.medium)
             .clickable {
             },
+        onClick = onButtonCard,
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surface
         ),
@@ -111,6 +108,6 @@ fun SingleCard(card: Models, modifier: Modifier = Modifier) {
 @Composable
 fun CardPreview() {
     ScrubsUpTheme {
-        ChooseList()
+        ChooseList(onButtonCard={})
     }
 }

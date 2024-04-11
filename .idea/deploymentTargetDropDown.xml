@@ -18,7 +18,7 @@
           <timeTargetWasSelectedWithDropDown value="2024-04-07T18:26:21.608732Z" />
         </State>
       </entry>
-      <entry key="GreetingPreview">
+      <entry key="MainActivity">
         <State />
       </entry>
       <entry key="ModelPreview">
@@ -39,6 +39,9 @@
           </targetSelectedWithDropDown>
           <timeTargetWasSelectedWithDropDown value="2024-04-07T18:24:39.789555Z" />
         </State>
+      </entry>
+      <entry key="app">
+        <State />
       </entry>
       <entry key="modelPreview">
         <State />
