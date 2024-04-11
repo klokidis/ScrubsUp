@@ -75,8 +75,8 @@ fun CardList(topBarName: Int, cardList: List<Models>, modifier: Modifier = Modif
 fun SingleCard(card: Models, modifier: Modifier = Modifier) {
     Card(
         modifier = modifier
-            .fillMaxSize()
-            .shadow(4.dp, shape = RoundedCornerShape(16.dp))
+            .fillMaxWidth()
+            .shadow(3.dp, shape = RoundedCornerShape(16.dp))
             .clip(MaterialTheme.shapes.medium)
             .clickable {
             },
@@ -94,14 +94,13 @@ fun SingleCard(card: Models, modifier: Modifier = Modifier) {
                     contentDescription = null, //no need
                     modifier = Modifier
                         .size(width = dimensionResource(R.dimen.image_width), height = dimensionResource(R.dimen.image_height))
-                        .padding(end = dimensionResource(R.dimen.padding_large))
+                        .padding(start = dimensionResource(R.dimen.padding_medium_large), end = dimensionResource(R.dimen.padding_large))
                         .aspectRatio(1f),
                     contentScale = ContentScale.Crop
                 )
             }
             Text(
                 text = LocalContext.current.getString(card.stringResourceId),
-                modifier = Modifier.padding(start = dimensionResource(R.dimen.padding_medium)),
                 style = MaterialTheme.typography.bodyLarge,
             )
         }

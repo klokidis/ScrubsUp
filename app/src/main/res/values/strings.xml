@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Scrubs Up</string>
     <string name="top_bar">Choose</string>
-    <string name="heart">heart</string>
-    <string name="brain">brain</string>
-    <string name="neuron">neuron</string>
+    <string name="heart">Heart</string>
+    <string name="brain">Brain</string>
     <string name="lungs">lungs</string>
     <string name="previous_button">previous button</string>
     <string name="model_3d">3D models</string>
     <string name="Arterial_vessel">Arterial vessel</string>
     <string name="Neuron">Neuron</string>
-    <string name="full_body">full body</string>
+    <string name="full_body">Full body</string>
+    <string name="skeleton">Skeleton</string>
 </resources>
