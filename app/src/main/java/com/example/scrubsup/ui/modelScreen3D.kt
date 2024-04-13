@@ -1,20 +1,31 @@
+@file:OptIn(ExperimentalFoundationApi::class)
+
 package com.example.scrubsup.ui
 
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.pager.HorizontalPager
+import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material3.Tab
 import androidx.compose.material3.TabRow
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import com.example.scrubsup.TopAppBar
 import com.example.scrubsup.ui.theme.ScrubsUpTheme
@@ -23,8 +34,7 @@ import com.example.scrubsup.ui.theme.ScrubsUpTheme
 fun ModelScreen3D(title:String,html: String){
     Column{
         TopAppBar(title)
-        TabRowSwipeable()
-        WebViewScreen(html)
+        TabRowSwipeable(html)
     }
 }
 
@@ -52,9 +62,20 @@ fun WebViewScreen(html: String) {
 }
 
 @Composable
-fun TabRowSwipeable(){
+fun TabRowSwipeable(html: String){
     var selectedTabIndex by rememberSaveable {
         mutableIntStateOf(0)
+    }
+    val pagerState = rememberPagerState {
+        ViewModel().tabItems.size
+    }
+    LaunchedEffect(selectedTabIndex){
+        pagerState.animateScrollToPage(selectedTabIndex)
+    }
+    LaunchedEffect(pagerState.currentPage,pagerState.isScrollInProgress) {
+        if(!pagerState.isScrollInProgress){
+            selectedTabIndex = pagerState.currentPage
+        }
     }
     Column {
         TabRow(selectedTabIndex = selectedTabIndex) {
@@ -70,6 +91,25 @@ fun TabRowSwipeable(){
                 )
             }
         }
+        HorizontalPager(
+            state = pagerState,
+            userScrollEnabled = false,
+            modifier = Modifier
+                .fillMaxWidth()
+                .weight(1f)
+        ) {index ->
+            Box(
+                modifier= Modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center
+            ){
+                if(index==0){
+                    WebViewScreen(html)
+                }else{
+                    Text(text = "fd")
+                }
+            }
+
+        }
     }
 }
 
@@ -77,6 +117,5 @@ fun TabRowSwipeable(){
 @Composable
 fun ModelPreview() {
     ScrubsUpTheme {
-        TabRowSwipeable()
     }
 }

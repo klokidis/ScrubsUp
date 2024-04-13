@@ -46,7 +46,9 @@ fun ChooseList(
             TopAppBar(LocalContext.current.getString(topBarName))
         }
     ) { it ->
-        LazyColumn(contentPadding = it)  {
+        LazyColumn(
+            contentPadding = it
+        )  {
             items(cardList) { cards ->
                 SingleCard(
                     card = cards,
