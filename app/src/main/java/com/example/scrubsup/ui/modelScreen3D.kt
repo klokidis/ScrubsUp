@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material3.Tab
@@ -25,7 +24,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import com.example.scrubsup.TopAppBar
 import com.example.scrubsup.ui.theme.ScrubsUpTheme
@@ -41,7 +39,7 @@ fun ModelScreen3D(title:String,html: String){
 @Composable
 fun WebViewScreen(html: String) {
     AndroidView(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier,
         factory = { context ->
             WebView(context).apply {
                 settings.javaScriptEnabled = true
@@ -49,7 +47,7 @@ fun WebViewScreen(html: String) {
                 settings.domStorageEnabled = true
             }
         },
-        update = { webView -> //CHANGE THIS TO LOAD FROM DATA
+        update = { webView ->
             webView.loadDataWithBaseURL(
                 null,
                 html,
@@ -79,7 +77,7 @@ fun TabRowSwipeable(html: String){
     }
     Column {
         TabRow(selectedTabIndex = selectedTabIndex) {
-            ViewModel().tabItems.forEachIndexed() {index, item ->
+            ViewModel().tabItems.forEachIndexed {index, item ->
                 Tab(
                     selected = index==selectedTabIndex,
                     onClick = {
