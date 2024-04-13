@@ -5,10 +5,11 @@ package com.example.scrubsup.ui
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material3.Tab
@@ -23,23 +24,24 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.viewinterop.AndroidView
+import com.example.scrubsup.R
 import com.example.scrubsup.TopAppBar
 import com.example.scrubsup.ui.theme.ScrubsUpTheme
 
 @Composable
-fun ModelScreen3D(title:String,html: String){
+fun ModelScreen3D(title: String, html: String, details: List<Pair<Int, Int>>){
     Column{
         TopAppBar(title)
-        TabRowSwipeable(html)
+        TabRowBar(html,details)
     }
 }
 
 @Composable
 fun WebViewScreen(html: String) {
     AndroidView(
-        modifier = Modifier,
         factory = { context ->
             WebView(context).apply {
                 settings.javaScriptEnabled = true
@@ -60,7 +62,7 @@ fun WebViewScreen(html: String) {
 }
 
 @Composable
-fun TabRowSwipeable(html: String){
+fun TabRowBar(html: String, details: List<Pair<Int, Int>>){
     var selectedTabIndex by rememberSaveable {
         mutableIntStateOf(0)
     }
@@ -93,17 +95,16 @@ fun TabRowSwipeable(html: String){
             state = pagerState,
             userScrollEnabled = false,
             modifier = Modifier
-                .fillMaxWidth()
+                .fillMaxSize()
                 .weight(1f)
         ) {index ->
             Box(
-                modifier= Modifier.fillMaxSize(),
-                contentAlignment = Alignment.Center
+                contentAlignment = Alignment.TopStart,
             ){
                 if(index==0){
                     WebViewScreen(html)
                 }else{
-                    Text(text = "fd")
+                    DetailsPage(details)
                 }
             }
 
@@ -111,9 +112,29 @@ fun TabRowSwipeable(html: String){
     }
 }
 
+@Composable
+fun DetailsPage(details:List<Pair<Int, Int>>){
+    Column(
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.Start,
+        modifier = Modifier.fillMaxSize()
+    ){
+        details.forEach{detail ->
+            Column(
+                modifier = Modifier.padding(dimensionResource(R.dimen.padding_large))
+            ){
+                Text(text = detail.first.toString())
+                Text(text = detail.second.toString())
+            }
+        }
+    }
+}
+
+
 @Preview(showBackground = true)
 @Composable
 fun ModelPreview() {
     ScrubsUpTheme {
+
     }
 }
