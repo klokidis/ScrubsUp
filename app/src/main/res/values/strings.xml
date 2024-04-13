@@ -6,9 +6,11 @@
     <string name="lungs">lungs</string>
     <string name="previous_button">previous button</string>
     <string name="model_3d">3D models</string>
+    <string name="model_3d_one">3D model</string>
     <string name="Arterial_vessel">Arterial vessel</string>
     <string name="Neuron">Neuron</string>
     <string name="full_body">Full body</string>
     <string name="skeleton">Skeleton</string>
     <string name="eye">Eye</string>
+    <string name="details">Details</string>
 </resources>

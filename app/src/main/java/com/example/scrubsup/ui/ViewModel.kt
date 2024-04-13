@@ -4,9 +4,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
+import com.example.scrubsup.R
 import kotlinx.coroutines.flow.MutableStateFlow
 import com.example.scrubsup.data.Datasource
 import com.example.scrubsup.model.Models
+import com.example.scrubsup.model.TabItem
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
@@ -35,4 +37,12 @@ class ViewModel : ViewModel() {
             )
         }
     }
+    val tabItems = listOf(
+        TabItem(
+            title = R.string.model_3d_one
+        ),
+        TabItem(
+            title = R.string.details
+        ),
+    )
 }
