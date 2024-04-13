@@ -1,7 +1,5 @@
 package com.example.scrubsup.ui
 
-
-
 import androidx.lifecycle.ViewModel
 import com.example.scrubsup.R
 import kotlinx.coroutines.flow.MutableStateFlow

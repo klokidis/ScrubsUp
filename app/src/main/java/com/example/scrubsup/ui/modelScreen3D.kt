@@ -10,6 +10,8 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material3.Tab
@@ -114,12 +116,12 @@ fun TabRowBar(html: String, details: List<Pair<Int, Int>>){
 
 @Composable
 fun DetailsPage(details:List<Pair<Int, Int>>){
-    Column(
+    LazyColumn(
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.Start,
         modifier = Modifier.fillMaxSize()
     ){
-        details.forEach{detail ->
+        items(details) { detail ->
             Column(
                 modifier = Modifier.padding(dimensionResource(R.dimen.padding_large))
             ){
@@ -129,7 +131,6 @@ fun DetailsPage(details:List<Pair<Int, Int>>){
         }
     }
 }
-
 
 @Preview(showBackground = true)
 @Composable
