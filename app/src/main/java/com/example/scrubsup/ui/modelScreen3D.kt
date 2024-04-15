@@ -6,6 +6,7 @@ import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -99,7 +100,7 @@ fun TabRowBar(html: String, details: List<Pair<Int, Int>>){
             selectedTabIndex = pagerState.currentPage
         }
     }
-    Column {
+    Column(Modifier.background(MaterialTheme.colorScheme.background)) {
         TabRow(selectedTabIndex = selectedTabIndex) {
             ViewModel().tabItems.forEachIndexed {index, item ->
                 Tab(
@@ -145,8 +146,8 @@ fun DetailsPage(details:List<Pair<Int, Int>>){
             Column(
                 modifier = Modifier.padding(dimensionResource(R.dimen.padding_large))
             ){
-                Text(text = stringResource(id =detail.first),style = MaterialTheme.typography.titleLarge)
-                Text(text = stringResource(id =detail.second),style = MaterialTheme.typography.titleMedium)
+                Text(text = stringResource(id =detail.first),style = MaterialTheme.typography.titleLarge,color = MaterialTheme.colorScheme.onBackground)
+                Text(text = stringResource(id =detail.second),style = MaterialTheme.typography.titleMedium,color = MaterialTheme.colorScheme.onBackground)
             }
         }
     }

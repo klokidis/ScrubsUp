@@ -56,7 +56,10 @@ fun ScrubsUpApp(
               )
             }
             composable(route = ScrubScreen.Model3D.name) {
-                ModelScreen3D(LocalContext.current.getString(uiState.card.stringResourceId),uiState.card.htmlString,uiState.card.details)
+                ModelScreen3D(
+                    LocalContext.current.getString(uiState.card.stringResourceId),
+                    uiState.card.htmlString,uiState.card.details
+                )
             }
         }
 }
