@@ -17,4 +17,71 @@
     <string name="word_count">%d/10</string>
     <string name="skip">Skip</string>
     <string name="score">Score: %d</string>
+    <!-- human body -->
+    <string name="Trachea">Trachea</string>
+    <string name="Trachea_details">In some terrestrial arthropods, tube that carries air directly to the cells</string>
+    <string name="heart_details">Muscular organ that pumps blood to all parts of the body</string>
+    <string name="lung_details">One of pair of spongy , saclike organs where gas exchange occurs</string>
+    <string name="brrain_details">Control center for the vertebrate body</string>
+    <string name="pupil">Pupil</string>
+    <string name="pupil_details">Opening in the center of the iris</string>
+    <!-- vessel -->
+    <string name="rbc">Red Blood Cells (RBC)</string>
+    <string name="rbc_details">Red blood cells, or erythrocytes, are the most common type of blood cell. Their primary function is to transport oxygen from the lungs to the bodys tissues and carbon dioxide from the tissues back to the lungs for exhalation.</string>
+    <string name="wbc">White Blood Cells (WBC)</string>
+    <string name="wbc_details">White blood cells, also known as leukocytes, are a vital part of the immune system. They help the body fight infection and foreign invaders, such as bacteria, viruses, and other pathogens.</string>
+    <string name="arteriole_wall">Arteriole Wall</string>
+    <string name="arteriole_wall_details">Arterioles are small blood vessels that branch out from arteries and lead to capillaries. The arteriole wall consists of three layers: the tunica intima (inner layer), tunica media (middle layer), and tunica externa (outer layer). These walls are muscular and can contract or dilate to regulate blood flow and blood pressure.</string>
+    <!-- neuron -->
+    <string name="cell_body">Cell body</string>
+    <string name="cell_body_details">The cell nucleus and organelles reside inside the cell body.</string>
+    <string name="myelin_sheath">Myelin sheath</string>
+    <string name="myelin_sheath_details">Myelinated axons increase the speed of action potentials down the nerve and insulate the fibers to prevent cross talk.</string>
+    <string name="dendrite">Dendrite</string>
+    <string name="dendrite_details">Several dendrites receive signals from other neurons. If enough signals reach the threshold necessary, an axon potential is initiated and travels down the axon.</string>
+    <string name="axon">Myelinate axon</string>
+    <string name="axon_details">oligodendroglial cells are responsible for the synthesis and maintenance of myelin, whereas Schwann cells subserve this role in the peripheral nervous system (PNS).</string>
+    <string name="terminal">Axon terminal</string>
+    <string name="terminal_details">Axon terminals are the ends of axons which transmit messages to other cells via use of neurotransmitters at synapses</string>
+    <!-- heart -->
+    <string name="human_heart">Human Heart</string>
+    <string name="human_heart_details">The heart is a muscular organ about the size of a fist, located just behind and slightly left of the breastbone. The heart pumps blood through the network of arteries and veins called the cardiovascular system.</string>
+    <string name="mitral_valve">Mitral Valve</string>
+    <string name="mitral_valve_details">Lets oxygen-rich blood from your lungs pass from the left atrium into the left ventricle.</string>
+    <string name="aortic_valve">Aortic valve</string>
+    <string name="aortic_valve_details">Opens the way for oxygen-rich blood to pass from the left ventricle into the aorta, your body’s largest artery.</string>
+    <string name="choardae_endineae">Chordae Tendineae</string>
+    <string name="choardae_endineae_details">Known as the heart strings, are cord-like tendons that connect the papillary muscles to the tricuspid valve and the bicuspid valve in the heart.</string>
+    <string name="tricuspid_valve">Tricuspid Valve</string>
+    <string name="tricuspid_valve_details">Regulates blood flow between the right atrium and right ventricle.</string>
+    <string name="pulmonary">Pulmonary Valve</string>
+    <string name="pulmonary_details">Controls blood flow from the right ventricle into the pulmonary arteries, which carry blood to your lungs to pick up oxygen.</string>
+    <string name="right_art">Right Atrium</string>
+    <string name="right_art_details">The right upper chamber of the heart. The right atrium receives deoxygenated blood from the body through the vena cava and pumps it into the right ventricle which then sends it to the lungs to be oxygenated.</string>
+    <string name="right_ven">Right Ventricle</string>
+    <string name="right_ven_details">The lower right chamber of the heart that receives deoxygenated blood from the right atrium and pumps it under low pressure into the lungs via the pulmonary artery.</string>
+    <string name="left_ven">Left Ventricle</string>
+    <string name="left_ven_details">The left lower chamber of the heart that receives blood from the left atrium and pumps it out under high pressure through the aorta to the body.</string>
+    <string name="left_art">Left Atrium</string>
+    <string name="left_art_details">The upper left chamber of the heart. The left atrium receives oxygenated blood from the lungs and pumps it down into the left ventricle which delivers it to the body.</string>
+    <!-- brain -->
+    <string name="frontal_lobe">Human Heart</string>
+    <string name="frontal_lobe_details">The frontal lobes are important for voluntary movement, expressive language and for managing higher level executive functions. Executive functions refer to a collection of cognitive skills including the capacity to plan, organize, initiate, self-monitor and control one’s responses in order to achieve a goal.</string>
+    <string name="parietal_lobe">Parietal Lobe</string>
+    <string name="parietal_lobe_details">The parietal lobes can be divided into two functional regions. One involves sensation and perception and the other is concerned with integrating sensory input, primarily with the visual system. The first function integrates sensory information to form a single perception (cognition).</string>
+    <string name="temporal">Temporal Lobe</string>
+    <string name="temporal_details">Most commonly associated with processing auditory information and with the encoding of memory. The temporal lobes are also believed to play an important role in processing affect/emotions, language, and certain aspects of visual perception.</string>
+    <string name="stem">Brain Stem</string>
+    <string name="stem_details">The brainstem has many basic functions, including regulation of heart rate, breathing, sleeping, and eating. It also plays a role in conduction. All information relayed from the body to the cerebrum and cerebellum and vice versa must traverse the brainstem.</string>
+    <string name="occipital_lobe">Occipital Lobe</string>
+    <string name="occipital_lobe_details">The occipital lobe is the part of the human brain responsible for interpreting information from the eyes and turning it into the world as a person sees it.</string>
+    <!-- eye -->
+    <string name="iris">Iris</string>
+    <string name="iris_details">The iris is a flat and ring-shaped membrane, it is Made of densely pigmented posterior double epithelium. This structure Serves as the “diaphragm” of the eye.</string>
+    <string name="ciliary">Ciliary body</string>
+    <string name="ciliary_details">Ciliary body is a circular structure that extends from the iris (the colored part of the eye). Ciliary Body is divided into two parts : a- The first one is the Ciliary muscle. b- The second one represents Ciliary Processes</string>
+    <string name="sclera">Sclera</string>
+    <string name="sclera_details">The sclera is the white part of the eye that surrounds the cornea. In fact, the sclera forms more than 80 percent of the surface area of the eyeball, extending from the cornea all the way to the optic nerve, which exits the back of the eye. Only a small portion of the anterior sclera is visible.</string>
+    <!-- lungs -->
+
 </resources>

@@ -24,8 +24,12 @@ val Typography = Typography(
     titleLarge= TextStyle(
         fontFamily = Tauri,
         fontWeight = FontWeight.Bold,
-        fontSize = 30.sp,
-        lineHeight = 24.sp,
+        fontSize = 24.sp,
+    ),
+    titleMedium = TextStyle(
+        fontFamily = Tauri,
+        fontWeight = FontWeight.Medium,
+        fontSize = 15.sp,
     ),
     displayMedium = TextStyle(
         fontFamily = Montserrat,

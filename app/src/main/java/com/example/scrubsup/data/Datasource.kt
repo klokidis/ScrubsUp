@@ -11,72 +11,87 @@ class Datasource(){
                 R.drawable.blood,
                 "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"Arterial vessel tour\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\"  src=\"https://sketchfab.com/models/246576050a644cb4ae16840922385e39/embed?autostart=1&annotations_visible=1&ui_theme=dark\"> </iframe> </div></body></html>",
                 listOf(
-                    Pair(0, 0),
-                    Pair(0, 0),
-                    Pair(0, 0),
+                    Pair(R.string.rbc, R.string.rbc_details),
+                    Pair(R.string.wbc, R.string.wbc_details),
+                    Pair(R.string.arteriole_wall, R.string.arteriole_wall_details)
                 )),
             Models(
                 R.string.Neuron,
                 R.drawable.neuron,
-                "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"Neuron example1\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\" src=\"https://sketchfab.com/models/fdf46286fb8c49a89100acc78b06f0c6/embed?autostart=1&ui_theme=dark\"> </iframe> </div></body></html>"
-                ,listOf(
-                    Pair(0, 0),
-                    Pair(0, 0),
-                    Pair(0, 0),
+                "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"Stellate Neuron Example 1\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\" src=\"https://sketchfab.com/models/6ef85cb9061a4ef2abb9e87258c7d0fb/embed?autostart=1&annotations_visible=1&ui_theme=dark\"> </iframe> </div></body></html>",
+                listOf(
+                    Pair(R.string.cell_body, R.string.cell_body_details),
+                    Pair(R.string.myelin_sheath, R.string.myelin_sheath_details),
+                    Pair(R.string.dendrite, R.string.dendrite_details),
+                    Pair(R.string.axon, R.string.axon_details),
+                    Pair(R.string.terminal, R.string.terminal_details),
                 )),
             Models(
                 R.string.heart,
                 R.drawable.heart,
                 "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"Anatomical Human Heart\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\" src=\"https://sketchfab.com/models/e48637d3399a4e5184bdf169929dc36e/embed?autostart=1&annotations_visible=1\"> </iframe> </div></body></html>"
                 ,listOf(
-                    Pair(0, 0),
-                    Pair(0, 0),
-                    Pair(0, 0),
+                    Pair(R.string.human_heart, R.string.human_heart_details),
+                    Pair(R.string.mitral_valve, R.string.mitral_valve_details),
+                    Pair(R.string.aortic_valve, R.string.aortic_valve_details),
+                    Pair(R.string.choardae_endineae, R.string.choardae_endineae_details),
+                    Pair(R.string.tricuspid_valve, R.string.tricuspid_valve_details),
+                    Pair(R.string.pulmonary, R.string.pulmonary_details),
+                    Pair(R.string.right_art, R.string.right_art_details),
+                    Pair(R.string.right_ven, R.string.right_ven_details),
+                    Pair(R.string.left_ven, R.string.left_ven_details),
+                    Pair(R.string.left_art, R.string.left_art_details),
                 )),
             Models(
                 R.string.brain,
                 R.drawable.brain,
                 "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"human-brain\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\" src=\"https://sketchfab.com/models/e073c2590bc24daaa7323f4daa5b7784/embed?autospin=1&autostart=1&annotations_visible=1&ui_theme=dark\"> </iframe> </div></body></html>",
                 listOf(
-                    Pair(0, 0),
-                    Pair(0, 0),
-                    Pair(0, 0),
+                    Pair(R.string.frontal_lobe, R.string.frontal_lobe_details),
+                    Pair(R.string.parietal_lobe, R.string.parietal_lobe_details),
+                    Pair(R.string.temporal, R.string.temporal_details),
+                    Pair(R.string.stem, R.string.stem_details),
+                    Pair(R.string.occipital_lobe, R.string.occipital_lobe_details)
                     )),
             Models(
                 R.string.eye,
                 R.drawable.eye,
-                "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"Human eye anatomy\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\" src=\"https://sketchfab.com/models/1a23ab8f624e40a9a461d984f312b609/embed?autostart=1&annotations_visible=1&ui_theme=dark\">  </iframe> </div></body></html>" ,
+                "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"Human eye anatomy\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\" src=\"https://sketchfab.com/models/5f741793c4654d14aa8257eec1f1a393/embed?autostart=1&annotations_visible=1&ui_animations=0&ui_infos=0&ui_stop=0&ui_inspector=0&ui_ar=0&ui_help=0&ui_settings=0&ui_vr=0&ui_fullscreen=0&ui_annotations=0&ui_theme=dark\"> </iframe> </div></body></html>",
                 listOf(
-                    Pair(0, 0),
-                    Pair(0, 0),
-                    Pair(0, 0),
+                    Pair(R.string.iris, R.string.iris_details),
+                    Pair(R.string.ciliary, R.string.ciliary_details),
+                    Pair(R.string.sclera, R.string.sclera_details),
                     )),
             Models(
                 R.string.lungs,
                 R.drawable.lungs,
-                "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"adult heart and lungs\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\" src=\"https://sketchfab.com/models/be4465abad5b45529d586b7b07c1afc5/embed?autostart=1&annotations_visible=1\"></iframe> </div></body></html>",
+                "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"respiratory tract lung trachea\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\" src=\"https://sketchfab.com/models/8d8eb15025684066aea7981c826f3c3f/embed?autostart=1&ui_theme=dark\"> </iframe> </div></body></html>",
                 listOf(
-                    Pair(0, 0),
-                    Pair(0, 0),
-                    Pair(0, 0),
+                    Pair(R.string.iris, R.string.iris_details),//CHANGE THEM
+                    Pair(R.string.ciliary, R.string.ciliary_details),
+                    Pair(R.string.sclera, R.string.sclera_details),
                 )),
             Models(
                 R.string.skeleton,
                 R.drawable.skeleton,
                 "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"Human Trunk Skeleton\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\" src=\"https://sketchfab.com/models/98738acf9ae749a99292c3dd2315d907/embed?autostart=1\"> </iframe> </div></body></html>",
                 listOf(
-                    Pair(0, 0),
-                    Pair(0, 0),
-                    Pair(0, 0),
+                    Pair(R.string.lungs, R.string.lung_details),//CHANGE THEM
+                    Pair(R.string.heart, R.string.heart_details),
+                    Pair(R.string.Trachea, R.string.Trachea_details),
+                    Pair(R.string.brain, R.string.brrain_details),
+                    Pair(R.string.pupil, R.string.pupil_details),
                 )),
             Models(
                 R.string.full_body,
                 R.drawable.body,
-                "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"Animated Full Human Body Anatomy\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\"  src=\"https://sketchfab.com/models/9b0b079953b840bc9a13f524b60041e4/embed?autostart=1\"> </iframe> </div></body></html>",
+                "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"Upper Body Anatomy\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\" src=\"https://sketchfab.com/models/bd4aa30efaa0455eaf3b4d59e9fe9c65/embed?autostart=1&annotations_visible=1&ui_theme=dark\"> </iframe> </div></body></html>",
                 listOf(
-                    Pair(1, 0),
-                    Pair(0, 0),
-                    Pair(0, 0),
+                    Pair(R.string.lungs, R.string.lung_details),
+                    Pair(R.string.heart, R.string.heart_details),
+                    Pair(R.string.Trachea, R.string.Trachea_details),
+                    Pair(R.string.brain, R.string.brrain_details),
+                    Pair(R.string.pupil, R.string.pupil_details),
                 ))
         )
     }
