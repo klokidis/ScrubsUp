@@ -83,5 +83,18 @@
     <string name="sclera">Sclera</string>
     <string name="sclera_details">The sclera is the white part of the eye that surrounds the cornea. In fact, the sclera forms more than 80 percent of the surface area of the eyeball, extending from the cornea all the way to the optic nerve, which exits the back of the eye. Only a small portion of the anterior sclera is visible.</string>
     <!-- lungs -->
+    <string name="trac">Trachea</string>
+    <string name="trac_details">Trachea (TRAY-kee-uh) is a long, U-shaped tube that connects your larynx (voice box) to your lungs. The trachea is often called the windpipe. Its a key part of your respiratory system. When you breathe in, air travels from your nose or mouth through your larynx</string>
+    <string name="prbr">Principal bronchus</string>
+    <string name="prbr_details">Bronchi have two main (or primary, or first) parts: Right main bronchus is a short, wide air passageway into your right lung. Left main bronchus is a narrow, long passageway into your left lung.</string>
+    <string name="cricoid">Cricoid cartilage</string>
+    <string name="cricoid_details">The cricoid cartilage is a hyaline cartilage ring which fully encircles the trachea and composes the inferior-most boundary of the laryngeal skeleton. The term “cricoid,” (Greek, krikos meaning “ring-shaped”) refers to the signet-ring resemblance of the cricoid cartilage.</string>
+    <!-- skeleton -->
+    <string name="ribs">Ribs</string>
+    <string name="ribs_details">Your ribcage is assembled from three types of bone - your sternum, 12 pairs of ribs and 12 thoracic vertebrae. All of your ribs attach to your spine, but only the top seven pairs connect to your sternum. These are known as true ribs and they are connected to your sternum by strips of cartilage.</string>
+    <string name="cervical_spine">Cervical spine</string>
+    <string name="cervical_spine_details">cervical spine is the neck region of your spinal column or backbone. It consists of your first seven bones (C1-C7). Other structures in or around your cervical spine are your intervertebral disks, spinal cord and nerves, muscles, tendons and ligaments.</string>
+    <string name="sternum">Sternum</string>
+    <string name="sternum_details">The sternum is a partially T-shaped vertical bone that forms the anterior portion of the chest wall centrally. The sternum is divided anatomically into three segments: manubrium, body, and xiphoid process. The sternum connects the ribs via the costal cartilages forming the anterior rib cage</string>
 
 </resources>

@@ -67,8 +67,8 @@ class Datasource(){
                 R.drawable.lungs,
                 "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"respiratory tract lung trachea\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\" src=\"https://sketchfab.com/models/8d8eb15025684066aea7981c826f3c3f/embed?autostart=1&ui_theme=dark\"> </iframe> </div></body></html>",
                 listOf(
-                    Pair(R.string.iris, R.string.iris_details),//CHANGE THEM
-                    Pair(R.string.ciliary, R.string.ciliary_details),
+                    Pair(R.string.trac, R.string.trac_details),
+                    Pair(R.string.prbr, R.string.prbr_details),
                     Pair(R.string.sclera, R.string.sclera_details),
                 )),
             Models(
@@ -76,11 +76,9 @@ class Datasource(){
                 R.drawable.skeleton,
                 "<html><body style='margin:0;padding:0;'><div class=\"sketchfab-embed-wrapper\"> <iframe title=\"Human Trunk Skeleton\" frameborder=\"0\" allowfullscreen mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" allow=\"autoplay; fullscreen; xr-spatial-tracking\" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=\"370\" height=\"750\" src=\"https://sketchfab.com/models/98738acf9ae749a99292c3dd2315d907/embed?autostart=1\"> </iframe> </div></body></html>",
                 listOf(
-                    Pair(R.string.lungs, R.string.lung_details),//CHANGE THEM
-                    Pair(R.string.heart, R.string.heart_details),
-                    Pair(R.string.Trachea, R.string.Trachea_details),
-                    Pair(R.string.brain, R.string.brrain_details),
-                    Pair(R.string.pupil, R.string.pupil_details),
+                    Pair(R.string.ribs, R.string.ribs_details),
+                    Pair(R.string.cervical_spine, R.string.cervical_spine_details),
+                    Pair(R.string.sternum, R.string.sternum_details),
                 )),
             Models(
                 R.string.full_body,
