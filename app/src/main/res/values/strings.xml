@@ -13,4 +13,8 @@
     <string name="skeleton">Skeleton</string>
     <string name="eye">Eye</string>
     <string name="details">Details</string>
+    <string name="quiz">Quiz</string>
+    <string name="word_count">%d/10</string>
+    <string name="skip">Skip</string>
+    <string name="score">Score: %d</string>
 </resources>

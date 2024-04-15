@@ -59,7 +59,6 @@ fun ScrubsUpApp(
                 ModelScreen3D(LocalContext.current.getString(uiState.card.stringResourceId),uiState.card.htmlString,uiState.card.details)
             }
         }
-
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
