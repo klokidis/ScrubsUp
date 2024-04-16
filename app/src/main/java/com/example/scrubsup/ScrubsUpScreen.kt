@@ -29,7 +29,7 @@ import com.example.scrubsup.ui.ViewModel
 
 enum class ScrubScreen(@StringRes var title: Int) {
     Start(title = R.string.app_name),
-    Choose(title = R.string.previous_button),
+    Choose(title = R.string.top_bar),
     Model3D(title = R.string.human_heart),
     Quiz(title = R.string.quiz),
 }
