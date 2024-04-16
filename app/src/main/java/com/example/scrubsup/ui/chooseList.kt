@@ -16,7 +16,6 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -30,25 +29,15 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.scrubsup.R
-import com.example.scrubsup.TopAppBar
 import com.example.scrubsup.data.Datasource
 import com.example.scrubsup.model.Models
 import com.example.scrubsup.ui.theme.ScrubsUpTheme
 
 @Composable
 fun ChooseList(
-    onButtonCard: (Models) -> Unit,
-    cardList: List<Models> = Datasource().loadModels3D(),
-    topBarName: Int = R.string.top_bar) {
-
-    Scaffold(
-        topBar ={
-            TopAppBar(LocalContext.current.getString(topBarName))
-        }
-    ) { it ->
-        LazyColumn(
-            contentPadding = it
-        )  {
+    onButtonCard: (Models ) -> Unit,
+    cardList: List<Models> = Datasource().loadModels3D()) {
+    LazyColumn  {
             items(cardList) { cards ->
                 SingleCard(
                     card = cards,
@@ -62,7 +51,6 @@ fun ChooseList(
                         )
                 )
             }
-        }
     }
 }
 
@@ -110,6 +98,5 @@ fun SingleCard(card: Models,onButtonCard: () -> Unit, modifier: Modifier = Modif
 @Composable
 fun CardPreview() {
     ScrubsUpTheme {
-        ChooseList(onButtonCard={})
     }
 }

@@ -25,7 +25,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.scrubsup.R
-import com.example.scrubsup.TopAppBar
 import com.example.scrubsup.ui.theme.ScrubsUpTheme
 
 @Composable
@@ -39,7 +38,6 @@ fun QuizScreen(modifier: Modifier = Modifier
             .fillMaxSize()
             .padding(start = 5.dp, end = 5.dp)
     ) {
-        TopAppBar(stringResource(id = R.string.quiz))
         Text(
             modifier = Modifier
                 .clip(MaterialTheme.shapes.medium)
