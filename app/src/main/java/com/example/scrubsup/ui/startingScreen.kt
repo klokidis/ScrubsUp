@@ -11,13 +11,14 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun StartingScreen(
     onButtonModels: () -> Unit,
+    onButtonQuiz: () -> Unit,
     ){
     Column(modifier = Modifier.padding(10.dp)){
         Button(modifier = Modifier.padding(10.dp),onClick = onButtonModels ) {
             Text(text = "models")
         }
-        Button(modifier = Modifier.padding(10.dp),onClick = { /*TODO*/ }) {
-
+        Button(modifier = Modifier.padding(10.dp),onClick =  onButtonQuiz ) {
+            Text(text = "quiz")
         }
     }
 }

@@ -17,6 +17,12 @@
     <string name="word_count">%d/10</string>
     <string name="skip">Skip</string>
     <string name="score">Score: %d</string>
+    <string name="question_count">Question %d out of 10</string>
+    <string name="ortho">Ortho</string>
+    <string name="cardiology">Cardiology</string>
+    <string name="neurology">Neurology</string>
+    <string name="trauma">Trauma</string>
+    <string name="rheumatology">Rheumatology</string>
     <!-- human body -->
     <string name="Trachea">Trachea</string>
     <string name="Trachea_details">In some terrestrial arthropods, tube that carries air directly to the cells</string>
@@ -96,5 +102,14 @@
     <string name="cervical_spine_details">cervical spine is the neck region of your spinal column or backbone. It consists of your first seven bones (C1-C7). Other structures in or around your cervical spine are your intervertebral disks, spinal cord and nerves, muscles, tendons and ligaments.</string>
     <string name="sternum">Sternum</string>
     <string name="sternum_details">The sternum is a partially T-shaped vertical bone that forms the anterior portion of the chest wall centrally. The sternum is divided anatomically into three segments: manubrium, body, and xiphoid process. The sternum connects the ribs via the costal cartilages forming the anterior rib cage</string>
+
+
+    <!-- QUIZ -->
+    <!-- ORTHO -->
+    <string name="ortho1">A two-year-old boy presented with a large unresectable maxillary giant cell tumour. Which of the following is the most effective treatment option?</string>
+    <string name="ortho1_1">Zoledronic acid</string>
+    <string name="ortho1_2">Intralesional corticosteroids</string>
+    <string name="ortho1_3">Denosumab</string>
+    <string name="ortho1_4">Interferon</string>
 
 </resources>

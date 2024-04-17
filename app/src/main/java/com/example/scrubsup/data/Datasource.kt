@@ -2,8 +2,11 @@ package com.example.scrubsup.data
 
 import com.example.scrubsup.R
 import com.example.scrubsup.model.Models
+import com.example.scrubsup.model.Quiz
 
 class Datasource(){
+
+    val MAX_QUESTIONS = 10
     fun loadModels3D(): List<Models> {
         return listOf(
             Models(
@@ -91,6 +94,81 @@ class Datasource(){
                     Pair(R.string.brain, R.string.brrain_details),
                     Pair(R.string.pupil, R.string.pupil_details),
                 ))
+        )
+    }
+
+    fun loadQuizSubjet(): List<Models> {
+        return listOf(
+            Models(
+                R.string.ortho,
+                R.drawable.skeleton,
+                "",
+                listOf()),
+            Models(
+                R.string.cardiology,
+                R.drawable.heart,
+                "",
+                listOf()),
+            Models(
+                R.string.neurology,
+                R.drawable.neuron,
+                "",
+                listOf()),
+            Models(
+                R.string.trauma,
+                R.drawable.body,
+                "",
+                listOf()),
+            Models(
+                R.string.rheumatology,
+                R.drawable.brain,
+                "",
+                listOf()),
+        )
+    }
+    fun loadQuestions(): List<Quiz> {
+        return listOf(
+            Quiz(
+                R.string.ortho1,
+                R.drawable.ortho1,
+                listOf(
+                    Pair(R.string.ortho1_1,false),
+                    Pair(R.string.ortho1_2,false),
+                    Pair(R.string.ortho1_3,true),
+                    Pair(R.string.ortho1_4,false),
+                ),
+                R.string.ortho
+            ),
+            Quiz(
+                R.string.sternum_details,
+                R.drawable.blood,
+                listOf(),
+                R.string.ortho
+            ),
+            Quiz(
+                R.string.sternum_details,
+                R.drawable.blood,
+                listOf(),
+                R.string.ortho
+            ),
+            Quiz(
+                R.string.sternum_details,
+                R.drawable.blood,
+                listOf(),
+                R.string.ortho
+            ),
+            Quiz(
+                R.string.sternum_details,
+                R.drawable.blood,
+                listOf(),
+                R.string.ortho
+            ),
+            Quiz(
+                R.string.sternum_details,
+                R.drawable.blood,
+                listOf(),
+                R.string.ortho
+            ),
         )
     }
 }
