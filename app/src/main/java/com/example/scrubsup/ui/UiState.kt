@@ -10,6 +10,7 @@ data class UiState(
     val card: Models = Models(0,0,"",listOf()),
 
     val answerCount: Int = 0,
+    val isOver:Boolean = false,
     val rightAnswerCount: Int = 0,
     val questions: List<Quiz> = listOf(Quiz(0, 0, listOf(),0)),
     val question: Quiz = Quiz(0, 0, listOf(),0)

@@ -14,15 +14,16 @@
     <string name="eye">Eye</string>
     <string name="details">Details</string>
     <string name="quiz">Quiz</string>
-    <string name="word_count">%d/10</string>
+    <string name="word_count">%d/5</string>
     <string name="skip">Skip</string>
     <string name="score">Score: %d</string>
-    <string name="question_count">Question %d out of 10</string>
+    <string name="question_count">Question %d out of 5</string>
     <string name="ortho">Ortho</string>
     <string name="cardiology">Cardiology</string>
     <string name="neurology">Neurology</string>
     <string name="trauma">Trauma</string>
-    <string name="rheumatology">Rheumatology</string>
+    <string name="respiratory">respiratory system</string>
+    <string name="next">Next</string>
     <!-- human body -->
     <string name="Trachea">Trachea</string>
     <string name="Trachea_details">In some terrestrial arthropods, tube that carries air directly to the cells</string>
@@ -105,11 +106,62 @@
 
 
     <!-- QUIZ -->
-    <!-- ORTHO -->
-    <string name="ortho1">A two-year-old boy presented with a large unresectable maxillary giant cell tumour. Which of the following is the most effective treatment option?</string>
-    <string name="ortho1_1">Zoledronic acid</string>
-    <string name="ortho1_2">Intralesional corticosteroids</string>
-    <string name="ortho1_3">Denosumab</string>
-    <string name="ortho1_4">Interferon</string>
+    <!-- neurology -->
+    <string name="brain1">Patient with longstanding history of intermittent headache. What does the image show?</string>
+    <string name="brain1_1">Subdural collection</string>
+    <string name="brain1_2">Subarachnoid haemorrhage</string>
+    <string name="brain1_3">Normal appearances</string>
+    <string name="brain1_4">Interventricular haemorrhage</string>
+    <string name="brain2">History of head injury. Patient unconscious. Which statement is true?</string>
+    <string name="brain2_1">There is no evidence of mass effect</string>
+    <string name="brain2_2">The scan shows subarachnoid haemorrhage</string>
+    <string name="brain2_3">Changing window settings would help clarify the diagnosis</string>
+    <string name="brain2_4">A history of anticoagulation is irrelevant in this setting</string>
+    <string name="brain3">Patient with a sudden onset of hemianopia. What does this pre-contrast CT brain image demonstrate?</string>
+    <string name="brain3_1">Basal ganglia infarct</string>
+    <string name="brain3_2">Left occipital intracerebral haemorrhage</string>
+    <string name="brain3_3">Abnormal calcification</string>
+    <string name="brain3_4">An enhancing mass</string>
+    <string name="brain4">Which description most accurately describes the findings on these two images?</string>
+    <string name="brain4_1">Increased density consistent with a subdural collection</string>
+    <string name="brain4_2">Multiple areas of enhancement due to metastases</string>
+    <string name="brain4_3">Areas of abnormally low density surrounded by enhancement post IV-contrast</string>
+    <string name="brain4_4">Increased density consistent with an acute primary intracerebral haemorrhage</string>
+    <string name="brain5">Patient with history of recent head injury. What does this scan show?</string>
+    <string name="brain5_1">Intracerebral haemorrhage</string>
+    <string name="brain5_2">Scalp haematoma</string>
+    <string name="brain5_3">Parafalcine extra-axial haemorrhage</string>
+    <string name="brain5_4">Subarachnoid haemorrhage</string>
 
+
+    <!-- lungs -->
+    <string name="lungs1">Which finding is present on this image?</string>
+    <string name="lungs1_1">Normal X-ray image</string>
+    <string name="lungs1_2">Sail sign</string>
+    <string name="lungs1_3">Pneumothorax</string>
+    <string name="lungs1_4">Meniscus sign</string>
+    <string name="lungs2">Which finding is present on this detail image of the left lung?</string>
+    <string name="lungs2_1">Mesothelioma</string>
+    <string name="lungs2_2">Asbestosis</string>
+    <string name="lungs2_3">Pleural effusion</string>
+    <string name="lungs2_4">Calcified pleural plaques</string>
+    <string name="lungs3">20 year old female with high temperature and cough. Which answer best describes the appearance?</string>
+    <string name="lungs3_1">Normal</string>
+    <string name="lungs3_2">Image inadequate due to patient rotation</string>
+    <string name="lungs3_3">Pleural effusion</string>
+    <string name="lungs3_4">Consolidation</string>
+    <string name="lungs4">Which finding is present?</string>
+    <string name="lungs4_1">Normal chest X-ray</string>
+    <string name="lungs4_2">Pectus excavatum</string>
+    <string name="lungs4_3">Azygos fissure</string>
+    <string name="lungs4_4">Free gas under the diaphragm</string>
+    <string name="lungs5">Cough, weight loss and finger clubbing. Which statement is true?</string>
+    <string name="lungs5_1">The image is diagnostic of lung cancer</string>
+    <string name="lungs5_2">The image is diagnostic of pneumonia</string>
+    <string name="lungs5_3">Blunting of the costophrenic angles is due to pleural effusions</string>
+    <string name="lungs5_4">The lungs are hyperexpanded</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="you_scored">\"You scored: %d\"</string>
+    <string name="exit">Exit</string>
+    <string name="play_again">Play Again</string>
 </resources>

@@ -17,6 +17,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.lifecycle.viewmodel.viewModelFactory
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -101,8 +102,8 @@ fun ScrubsUpApp(
                 ChooseList(
                     onButtonCard = {
                         viewModel.updateModel(it.stringResourceId,it.imageResourceId,it.htmlString,it.details)
-                        navController.navigate(ScrubScreen.Model3D.name)
                         ScrubScreen.Model3D.title = it.stringResourceId
+                        navController.navigate(ScrubScreen.Model3D.name)
                     },
                     Datasource().loadModels3D()
                 )
@@ -116,8 +117,8 @@ fun ScrubsUpApp(
             composable(route = ScrubScreen.ChooseQuiz.name) {
                 ChooseList(
                     onButtonCard = {
-                        navController.navigate(ScrubScreen.Quiz.name)
                         viewModel.chooseQuizTheme(it.stringResourceId)
+                        navController.navigate(ScrubScreen.Quiz.name)
                     },
                     Datasource().loadQuizSubjet()
                 )
@@ -126,7 +127,17 @@ fun ScrubsUpApp(
                 QuizScreen(
                     question = uiState.question,
                     answerCount = uiState.answerCount,
-                    correctAnswerCount = uiState.rightAnswerCount
+                    correctAnswerCount = uiState.rightAnswerCount,
+                    onButtonClicked = {
+                        viewModel.checkUserGuess(it)
+                    },
+                    isOver = uiState.isOver,
+                    goBack = {
+                        navController.navigate(ScrubScreen.ChooseQuiz.name)
+                    },
+                    onPlayAgain = {
+                        viewModel.resetGame()
+                    }
                 )
             }
         }

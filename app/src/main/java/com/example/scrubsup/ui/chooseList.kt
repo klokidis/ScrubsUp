@@ -36,10 +36,10 @@ fun ChooseList(
     onButtonCard: (Models) -> Unit,
     cardList: List<Models>) {
     LazyColumn(modifier = Modifier.fillMaxSize())  {
-            items(cardList) { cards ->
+            items(cardList) { card ->
                 SingleCard(
-                    card = cards,
-                    {onButtonCard(cards)},
+                    card = card,
+                    {onButtonCard(card)},
                     modifier = Modifier
                         .padding(
                             top = dimensionResource(R.dimen.vertical_card_padding),

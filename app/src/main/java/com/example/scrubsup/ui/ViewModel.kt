@@ -18,46 +18,70 @@ class ViewModel : ViewModel() {
     val uiState: StateFlow<UiState> = _uiState.asStateFlow()
 
     private var subject: Int = 0
-    private var questionsThemed: List<Quiz> = Datasource().loadQuestions()
+    private var questions: List<Quiz> = Datasource().loadQuestions()
 
     init {
         resetGame()
     }
 
     fun resetGame() {
-        _uiState.value = UiState(answerCount = 0, rightAnswerCount = 0, questions = Datasource().loadQuestions().filter { it.subject ==  subject })
+        _uiState.update { currentState ->
+            currentState.copy(
+                answerCount = 0,
+                isOver = false,
+                rightAnswerCount = 0,
+            )
+        }
+        updateQuestion()
     }
 
     fun chooseQuizTheme(cardSubject: Int){
-        subject = cardSubject
         _uiState.update { currentState ->
-            questionsThemed = questionsThemed.filter { it.subject == cardSubject }
-            currentState.copy(questions = questionsThemed)
+            currentState.copy(
+                answerCount = 0,
+                isOver = false,
+                rightAnswerCount = 0,
+                questions = questions.filter { it.subject == cardSubject },
+            )
         }
         updateQuestion()
     }
 
     private fun updateQuestion(){
         _uiState.update { currentState ->
-            currentState.copy(question = questionsThemed[_uiState.value.answerCount])
+            currentState.copy(question = _uiState.value.questions[_uiState.value.answerCount])
         }
     }
 
     fun checkUserGuess(userGuess:Boolean) {
         val updatedScore = _uiState.value.answerCount.plus(1)
+        var rightAnswersUpdated = _uiState.value.rightAnswerCount
         if (userGuess) {
-            _uiState.value.rightAnswerCount.plus(1)
+            rightAnswersUpdated = _uiState.value.rightAnswerCount.plus(1)
         }
-        updateGameState(updatedScore)
+
+        updateGameState(updatedScore,rightAnswersUpdated)
     }
 
-    private fun updateGameState(updatedScore: Int) {
+    private fun updateGameState(updatedScore: Int,rightAnswersUpdated: Int) {
         if (updatedScore == Datasource().MAX_QUESTIONS){
-
+            _uiState.update { currentState ->
+                currentState.copy(
+                    answerCount = updatedScore,
+                    rightAnswerCount = rightAnswersUpdated,
+                    isOver = true
+                )
+            }
         } else{
-
+            _uiState.update { currentState ->
+                currentState.copy(
+                    answerCount = updatedScore,
+                    rightAnswerCount = rightAnswersUpdated
+                )
+            }
+            updateQuestion()
         }
-        updateQuestion()
+
     }
 
     fun updateModel(nameFromR: Int,image: Int,html:String,details:List<Pair<Int, Int>>){
