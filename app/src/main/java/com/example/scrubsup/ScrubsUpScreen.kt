@@ -17,7 +17,6 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.lifecycle.viewmodel.viewModelFactory
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -133,7 +132,7 @@ fun ScrubsUpApp(
                     },
                     isOver = uiState.isOver,
                     goBack = {
-                        navController.navigate(ScrubScreen.ChooseQuiz.name)
+                        navController.popBackStack(ScrubScreen.ChooseQuiz.name,false)
                     },
                     onPlayAgain = {
                         viewModel.resetGame()
