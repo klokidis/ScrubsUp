@@ -191,7 +191,7 @@ fun QuizScreen(
                     onButtonClicked(answer)
                     enableClick = 0
                 },
-                modifier = Modifier.padding(top = 10.dp, end = 5.dp).width(80.dp).height(40.dp)
+                modifier = Modifier.padding(top = 10.dp, end = 5.dp)
             ) {
                 Text(text = stringResource(id = R.string.next))
             }
