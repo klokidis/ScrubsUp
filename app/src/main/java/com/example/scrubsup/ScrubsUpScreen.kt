@@ -33,6 +33,7 @@ enum class ScrubScreen(@StringRes var title: Int) {
     Start(title = R.string.app_name),
     ChooseModels(title = R.string.top_bar),
     ChooseQuiz(title = R.string.top_bar),
+    ChooseCard(title = R.string.top_bar),
     Model3D(title = R.string.human_heart),
     Quiz(title = R.string.quiz),
 }
@@ -94,7 +95,8 @@ fun ScrubsUpApp(
             composable(route = ScrubScreen.Start.name) {
                 StartingScreen(
                     onButtonModels = { navController.navigate(ScrubScreen.ChooseModels.name) },
-                    onButtonQuiz = { navController.navigate(ScrubScreen.ChooseQuiz.name) }
+                    onButtonQuiz = { navController.navigate(ScrubScreen.ChooseQuiz.name) },
+                    onButtonCard = { navController.navigate(ScrubScreen.ChooseCard.name) }
                     )
             }
             composable(route = ScrubScreen.ChooseModels.name) {
