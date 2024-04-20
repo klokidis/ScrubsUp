@@ -115,8 +115,7 @@ fun CategoryCard(title: String, photo: Int, onClick: () -> Unit) {
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
                     fontSize = 17.sp
-                ),
-                color = Color.Black
+                )
             )
         }
     }
