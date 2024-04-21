@@ -13,7 +13,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
@@ -23,6 +22,9 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import com.example.scrubsup.R
 
 @Composable
@@ -32,7 +34,7 @@ fun StartingScreen(
     onButtonCard: () -> Unit,
     ) {
     val scrollState = rememberScrollState()
-    val imageSize = 150.dp
+    val imageSize = 250.dp
 
     Column(
         modifier = Modifier
@@ -54,7 +56,7 @@ fun StartingScreen(
             text = "Welcome to Scrubs Up!",
             style = TextStyle(
                 fontWeight = FontWeight.Bold,
-                fontSize = 20.sp
+                fontSize = 15.sp
             ),
             modifier = Modifier
                 .padding(bottom = 7.dp)
@@ -94,8 +96,9 @@ fun CategoryCard(title: String, photo: Int, onClick: () -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .clickable { onClick() },
-        shape = RoundedCornerShape(20.dp),
+            .clickable { onClick() }
+            .clip(MaterialTheme.shapes.medium),
+        //shape = RoundedCornerShape(20.dp),
         elevation = CardDefaults.cardElevation(7.dp)
     ) {
         Column(

@@ -36,6 +36,7 @@ enum class ScrubScreen(@StringRes var title: Int) {
     ChooseCard(title = R.string.top_bar),
     Model3D(title = R.string.human_heart),
     Quiz(title = R.string.quiz),
+    Card(title = R.string.card),
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -121,7 +122,7 @@ fun ScrubsUpApp(
                         viewModel.chooseQuizTheme(it.stringResourceId)
                         navController.navigate(ScrubScreen.Quiz.name)
                     },
-                    Datasource().loadQuizSubjet()
+                    Datasource().loadQuizSubject()
                 )
             }
             composable(route = ScrubScreen.Quiz.name) {
@@ -141,8 +142,21 @@ fun ScrubsUpApp(
                     }
                 )
             }
+            composable(route = ScrubScreen.ChooseQuiz.name) {
+                ChooseList(
+                    onButtonCard = {
+                        viewModel.chooseQuizTheme(it.stringResourceId)
+                        navController.navigate(ScrubScreen.Card.name)
+                    },
+                    Datasource().loadCardSubject()
+                )
+            }
+            //composable(route = ScrubScreen.Model3D.name) {
+                //cardScreen(
+                   // uiState.card.htmlString,
+                   // uiState.card.details,
+                //)
+            //}
         }
     }
 }
-
-

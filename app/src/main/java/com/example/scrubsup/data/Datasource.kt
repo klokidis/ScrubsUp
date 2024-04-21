@@ -97,7 +97,7 @@ class Datasource(){
         )
     }
 
-    fun loadQuizSubjet(): List<Models> {
+    fun loadQuizSubject(): List<Models> {
         return listOf(
             Models(
                 R.string.neurology,
@@ -111,7 +111,167 @@ class Datasource(){
                 listOf()),
         )
     }
+
+    fun loadCardSubject(): List<Models> {
+        return listOf(
+            Models(
+                R.string.Arterial_vessel,
+                R.drawable.blood,
+                "",
+                listOf()),
+            Models(
+                R.string.Neuron,
+                R.drawable.neuron,
+                "",
+                listOf()),
+            Models(
+                R.string.heart,
+                R.drawable.heart,
+                "",
+                listOf()),
+            Models(
+                R.string.brain,
+                R.drawable.brain,
+                "",
+                listOf()),
+            Models(
+                R.string.eye,
+                R.drawable.eye,
+                "",
+                listOf()),
+            Models(
+                R.string.lungs,
+                R.drawable.lungs,
+                "",
+                listOf()),
+            Models(
+                R.string.skeleton,
+                R.drawable.skeleton,
+                "",
+                listOf()),
+            Models(
+                R.string.full_body,
+                R.drawable.body,
+                "",
+                listOf())
+        )
+    }
+
     fun loadQuestions(): List<Quiz> {
+        return listOf(
+            Quiz(
+                R.string.brain1,
+                R.drawable.brain1,
+                listOf(
+                    Pair(R.string.brain1_1,false),
+                    Pair(R.string.brain1_2,false),
+                    Pair(R.string.brain1_3,true),
+                    Pair(R.string.brain1_4,false),
+                ),
+                R.string.neurology
+            ),  Quiz(
+                R.string.brain2,
+                R.drawable.brain2,
+                listOf(
+                    Pair(R.string.brain2_1,false),
+                    Pair(R.string.brain2_2,false),
+                    Pair(R.string.brain2_3,true),
+                    Pair(R.string.brain2_4,false),
+                ),
+                R.string.neurology
+            ),
+            Quiz(
+                R.string.brain3,
+                R.drawable.brain3,
+                listOf(
+                    Pair(R.string.brain3_1,false),
+                    Pair(R.string.brain3_2,true),
+                    Pair(R.string.brain3_3,false),
+                    Pair(R.string.brain3_4,false),
+                ),
+                R.string.neurology,
+            ),
+            Quiz(
+                R.string.brain4,
+                R.drawable.brain4,
+                listOf(
+                    Pair(R.string.brain4_1,false),
+                    Pair(R.string.brain4_2,true),
+                    Pair(R.string.brain4_3,false),
+                    Pair(R.string.brain4_4,false),
+                ),
+                R.string.neurology,
+            ),
+            Quiz(
+                R.string.brain5,
+                R.drawable.brain5,
+                listOf(
+                    Pair(R.string.brain5_1,false),
+                    Pair(R.string.brain5_2,true),
+                    Pair(R.string.brain5_3,false),
+                    Pair(R.string.brain5_4,false),
+                ),
+                R.string.neurology,
+            ),
+            Quiz(
+                R.string.lungs1,
+                R.drawable.lungs1_1,
+                listOf(
+                    Pair(R.string.lungs1_1,false),
+                    Pair(R.string.lungs1_2,false),
+                    Pair(R.string.lungs1_3,false),
+                    Pair(R.string.lungs1_4,true),
+                ),
+                R.string.respiratory,
+            ),
+            Quiz(
+                R.string.lungs2,
+                R.drawable.lungs2,
+                listOf(
+                    Pair(R.string.lungs2_1,false),
+                    Pair(R.string.lungs2_2,false),
+                    Pair(R.string.lungs2_3,false),
+                    Pair(R.string.lungs2_4,true),
+                ),
+                R.string.respiratory,
+            ),
+            Quiz(
+                R.string.lungs3,
+                R.drawable.lungs3,
+                listOf(
+                    Pair(R.string.lungs3_1,false),
+                    Pair(R.string.lungs3_2,false),
+                    Pair(R.string.lungs3_4,true),
+                    Pair(R.string.lungs3_3,false),
+                ),
+                R.string.respiratory,
+            ),
+            Quiz(
+                R.string.lungs4,
+                R.drawable.lungs4,
+                listOf(
+                    Pair(R.string.lungs4_1,true),
+                    Pair(R.string.lungs4_2,false),
+                    Pair(R.string.lungs4_3,false),
+                    Pair(R.string.lungs4_4,false),
+                ),
+                R.string.respiratory,
+            ),
+            Quiz(
+                R.string.lungs5,
+                R.drawable.lungs5,
+                listOf(
+                    Pair(R.string.lungs5_1,false),
+                    Pair(R.string.lungs5_2,false),
+                    Pair(R.string.lungs5_3,false),
+                    Pair(R.string.lungs5_4,true),
+                ),
+                R.string.respiratory,
+            ),
+        )
+    }
+
+    fun loadCardQuestions(): List<Quiz> {
         return listOf(
             Quiz(
                 R.string.brain1,

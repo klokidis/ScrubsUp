@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Scrubs Up</string>
     <string name="top_bar">Choose</string>
+    <string name="card">Memory Cards</string>
     <string name="heart">Heart</string>
     <string name="brain">Brain</string>
     <string name="lungs">lungs</string>
@@ -164,4 +165,51 @@
     <string name="you_scored">\"You scored: %d\"</string>
     <string name="exit">Exit</string>
     <string name="play_again">Play Again</string>
+
+
+    <!-- CARDS -->
+    <!-- arterial vessel -->
+    <string name="artv_q1">What are Venae Cavae?</string>
+    <string name="artv_a1">Largest veins in the body, formed from the consecutive merging of smaller veins. Includes the superior (upper) and inferior (lower) vena cava. Function in returning deoxygenated blood to the heart.</string>
+    <string name="artv_q2">Common Iliac Arteries.</string>
+    <string name="artv_a2">Two arteries (left and right) branching off of the end of the abdominal aorta near the ilium. Supplies oxygenated blood to the rectum, bladder, reproductive organs, legs, and feet.</string>
+    <string name="artv_q3">Descending Aorta.</string>
+    <string name="artv_a3">The portion of the aorta occurring after the aortic arch that is made up of the thoracic (in the thorax of the body) and abdominal (in the abdominal cavity of the body) aorta.</string>
+    <string name="artv_q4">Aortic Arch.</string>
+    <string name="artv_a4">A branching portion of the aorta that is shaped like an upside-down U. Responsible for supplying the arms, neck, head, and brain with oxygenated blood.</string>
+    <string name="artv_q5">Coronary Arteries.</string>
+    <string name="artv_a5">Two arteries (left and right) that carry oxygenated blood to the heart muscle. When blocked due to plaque build-up, can lead to a heart attack.</string>
+    <string name="artv_q6">Aorta.</string>
+    <string name="artv_a6">The largest artery found in the body which functions in carrying blood away from the heart from the left ventricle to the rest of the body.</string>
+    <string name="artv_q7">Pulmonary Trunk.</string>
+    <string name="artv_a7">A large artery that fills with deoxygenated blood from the right ventricle of the heart following the opening of the pulmonary semilunar valve.Connects to the left and right pulmonary arteries.</string>
+
+    <!-- neuron -->
+
+    <!-- heart -->
+
+    <!-- brain -->
+    <string name="brain_q1">Identify the system of the brain that controls emotion and motivation.</string>
+    <string name="brain_a1">The Limbic System.</string>
+    <string name="brain_q2">Name the 4 parts of the brain involved in basic functions.</string>
+    <string name="brain_a2">Brainstem, Thalamus, Reticular Formation and Cerebellum</string>
+    <string name="brain_q3">Identify the primary function of the Occipital Lobe.</string>
+    <string name="brain_a3">Processes information received from sight.</string>
+    <string name="brain_q4">Identify the primary functions of the Parietal Lobe.</string>
+    <string name="brain_a4">Processes information received from touch.</string>
+    <string name="brain_q5">Identify the primary function of the Temporal Lobe</string>
+    <string name="brain_a5">Processes the information we hear.</string>
+    <string name="brain_q6">Identify an acronym helpful in remembering the 4 lobes of the cerebral cortex</string>
+    <string name="brain_a6">Freud Tore Pants Off</string>
+    <string name="brain_q7">Identify the primary function of the Thalamus</string>
+    <string name="brain_a7">Forwards information from the senses to other parts of the brain.</string>
+
+    <!-- eye -->
+
+    <!-- lungs -->
+
+    <!-- skeleton -->
+
+    <!-- full body -->
+
 </resources>

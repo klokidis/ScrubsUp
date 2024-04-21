@@ -52,8 +52,6 @@ fun ChooseList(
     }
 }
 
-
-
 @Composable
 fun SingleCard(card: Models,onButtonCard: () -> Unit, modifier: Modifier = Modifier) {
     Card(
@@ -90,4 +88,3 @@ fun SingleCard(card: Models,onButtonCard: () -> Unit, modifier: Modifier = Modif
         }
     }
 }
-
