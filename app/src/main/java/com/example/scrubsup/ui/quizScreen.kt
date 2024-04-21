@@ -10,10 +10,8 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
@@ -65,20 +63,20 @@ fun QuizScreen(
             .verticalScroll(rememberScrollState())
             .padding(start = 5.dp, end = 5.dp)
     ) {
-        Spacer(modifier = Modifier.padding(1.dp))
-       Row(
+        Spacer(modifier = Modifier.padding(3.dp))
+        Row(
            verticalAlignment = Alignment.CenterVertically,
            horizontalArrangement = Arrangement.Absolute.Center,
            modifier = Modifier.fillMaxWidth()
-       ) {
-           Spacer(Modifier.weight(1f))
+        ) {
+           Spacer(Modifier.weight(2f))
            Text(
                text = stringResource(R.string.question_count, answerCount+1),
                style = MaterialTheme.typography.bodyMedium,
                textAlign = TextAlign.Center,
                modifier = Modifier.padding(start = 4.dp)
            )
-           Spacer(Modifier.weight(0.5f))
+           Spacer(Modifier.weight(1f))
                Text(
                    modifier = Modifier
                        .padding(end = 4.dp)
@@ -90,7 +88,7 @@ fun QuizScreen(
                    color = MaterialTheme.colorScheme.onPrimary
                )
        }
-        Spacer(modifier = Modifier.padding(1.dp))
+        Spacer(modifier = Modifier.padding(4.dp))
         Text(
             text = stringResource(question.question),
             style = MaterialTheme.typography.titleMedium,
@@ -99,7 +97,7 @@ fun QuizScreen(
                 .padding(horizontal = 10.dp, vertical = 4.dp)
                 .align(alignment = Alignment.CenterHorizontally)
         )
-        Spacer(modifier = Modifier.padding(1.dp))
+        Spacer(modifier = Modifier.padding(4.dp))
         Image(
             painter = painterResource(question.imageResourceId),
             contentDescription = null,
@@ -109,7 +107,7 @@ fun QuizScreen(
                 .aspectRatio(1f),
             contentScale = ContentScale.Crop
         )
-        Spacer(modifier = Modifier.padding(1.dp))
+        Spacer(modifier = Modifier.padding(2.dp))
         Button(
             colors = if (enableClick == 0) {
                 ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
@@ -126,7 +124,7 @@ fun QuizScreen(
                 }
                 enableClick = 1
             }) {
-            Text(text = stringResource(id = question.answers[0].first))
+            Text(text = stringResource(id = question.answers[0].first),textAlign = TextAlign.Center,)
 
         }
         Button(
@@ -145,7 +143,7 @@ fun QuizScreen(
                 }
                 enableClick = 1
             }) {
-            Text(text = stringResource(id = question.answers[1].first))
+            Text(text = stringResource(id = question.answers[1].first),textAlign = TextAlign.Center,)
         }
         Button(
             colors = if (enableClick == 0) {
@@ -163,7 +161,7 @@ fun QuizScreen(
                 }
                 enableClick = 1
             }) {
-            Text(text = stringResource(id = question.answers[2].first))
+            Text(text = stringResource(id = question.answers[2].first),textAlign = TextAlign.Center,)
         }
         Button(
             colors = if (enableClick == 0) {
@@ -181,7 +179,7 @@ fun QuizScreen(
                 }
                 enableClick = 1
             }) {
-            Text(text = stringResource(id = question.answers[3].first))
+            Text(text = stringResource(id = question.answers[3].first),textAlign = TextAlign.Center,)
         }
         Row(
             verticalAlignment = Alignment.CenterVertically,
@@ -216,8 +214,6 @@ private fun FinalScoreDialog(
     onGoBack: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val activity = (LocalContext.current as Activity)
-
     AlertDialog(
         onDismissRequest = {
             // Dismiss the dialog when the user clicks outside the dialog or on the back
