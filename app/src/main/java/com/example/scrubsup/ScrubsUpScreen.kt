@@ -142,7 +142,7 @@ fun ScrubsUpApp(
                     }
                 )
             }
-            composable(route = ScrubScreen.ChooseQuiz.name) {
+            composable(route = ScrubScreen.ChooseCard.name) {
                 ChooseList(
                     onButtonCard = {
                         viewModel.chooseQuizTheme(it.stringResourceId)
@@ -151,7 +151,7 @@ fun ScrubsUpApp(
                     Datasource().loadCardSubject()
                 )
             }
-            //composable(route = ScrubScreen.Model3D.name) {
+            //composable(route = ScrubScreen.Card.name) {
                 //cardScreen(
                    // uiState.card.htmlString,
                    // uiState.card.details,

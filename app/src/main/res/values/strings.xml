@@ -171,45 +171,128 @@
     <!-- arterial vessel -->
     <string name="artv_q1">What are Venae Cavae?</string>
     <string name="artv_a1">Largest veins in the body, formed from the consecutive merging of smaller veins. Includes the superior (upper) and inferior (lower) vena cava. Function in returning deoxygenated blood to the heart.</string>
-    <string name="artv_q2">Common Iliac Arteries.</string>
+    <string name="artv_q2">Common Iliac Arteries</string>
     <string name="artv_a2">Two arteries (left and right) branching off of the end of the abdominal aorta near the ilium. Supplies oxygenated blood to the rectum, bladder, reproductive organs, legs, and feet.</string>
-    <string name="artv_q3">Descending Aorta.</string>
+    <string name="artv_q3">Descending Aorta</string>
     <string name="artv_a3">The portion of the aorta occurring after the aortic arch that is made up of the thoracic (in the thorax of the body) and abdominal (in the abdominal cavity of the body) aorta.</string>
-    <string name="artv_q4">Aortic Arch.</string>
+    <string name="artv_q4">Aortic Arch</string>
     <string name="artv_a4">A branching portion of the aorta that is shaped like an upside-down U. Responsible for supplying the arms, neck, head, and brain with oxygenated blood.</string>
-    <string name="artv_q5">Coronary Arteries.</string>
+    <string name="artv_q5">Coronary Arteries</string>
     <string name="artv_a5">Two arteries (left and right) that carry oxygenated blood to the heart muscle. When blocked due to plaque build-up, can lead to a heart attack.</string>
-    <string name="artv_q6">Aorta.</string>
+    <string name="artv_q6">Aorta</string>
     <string name="artv_a6">The largest artery found in the body which functions in carrying blood away from the heart from the left ventricle to the rest of the body.</string>
-    <string name="artv_q7">Pulmonary Trunk.</string>
+    <string name="artv_q7">Pulmonary Trunk</string>
     <string name="artv_a7">A large artery that fills with deoxygenated blood from the right ventricle of the heart following the opening of the pulmonary semilunar valve.Connects to the left and right pulmonary arteries.</string>
 
     <!-- neuron -->
+    <string name="neur_q1">What are Dendrites?</string>
+    <string name="neur_a1">Dendrites are extensions leading toward cell body that receives signal from other neurons and send them to the cell body.</string>
+    <string name="neur_q2">Cell body</string>
+    <string name="neur_a2">Part of neuron that holds the nucleus as well as other organelles, also called the soma.</string>
+    <string name="neur_q3">Nucleus</string>
+    <string name="neur_a3">Contains the genetic material of the neuron.</string>
+    <string name="neur_q4">Axon</string>
+    <string name="neur_a4">A long strand attached to the cell body. Conducts nerve impulses away from the cell body toward other neurons or effectors.</string>
+    <string name="neur_q5">Myelin sheath</string>
+    <string name="neur_a5">A lipid layer around the axon. It carries the message to one of these lipids to another, making transporting an impulse efficient.</string>
+    <string name="neur_q6">Action Potential</string>
+    <string name="neur_a6">Neurons transmit messages in the form of electrochemical impulses called an action potential.</string>
+    <string name="neur_q7">Central Nervous System</string>
+    <string name="neur_a7">This consists of the brain and spinal cord. This is the ultimate control center for all human behavior.</string>
 
     <!-- heart -->
+    <string name="heart_q1">Pulmonary Artery</string>
+    <string name="heart_a1">Carries deoxygentated blood from the heart to the lungs.</string>
+    <string name="heart_q2">Left Atrium</string>
+    <string name="heart_a2">Receives oxygen-rich blood from the lungs through the four pulmonary veins.</string>
+    <string name="heart_q3">The two valves that blood coming from the body passes.</string>
+    <string name="heart_a3">Tricuspid valve and the pulmonary semilunar valve.</string>
+    <string name="heart_q4">The two valves that blood coming from the lungs passes.</string>
+    <string name="heart_a4">Mitral (bicuspid) valve and the aortic semilunar valve.</string>
+    <string name="heart_q5">The primary pumping chambers of the heart.</string>
+    <string name="heart_a5">Ventricles</string>
+    <string name="heart_q6">Blood is forced into this area when the ventricle is filled.</string>
+    <string name="heart_a6">Artery</string>
+    <string name="heart_q7">Named for the three flaps that separate the right atrium and right ventricle.</string>
+    <string name="heart_a7">Tricuspid valve</string>
 
     <!-- brain -->
     <string name="brain_q1">Identify the system of the brain that controls emotion and motivation.</string>
     <string name="brain_a1">The Limbic System.</string>
     <string name="brain_q2">Name the 4 parts of the brain involved in basic functions.</string>
-    <string name="brain_a2">Brainstem, Thalamus, Reticular Formation and Cerebellum</string>
+    <string name="brain_a2">Brainstem, Thalamus, Reticular Formation and Cerebellum.</string>
     <string name="brain_q3">Identify the primary function of the Occipital Lobe.</string>
     <string name="brain_a3">Processes information received from sight.</string>
     <string name="brain_q4">Identify the primary functions of the Parietal Lobe.</string>
     <string name="brain_a4">Processes information received from touch.</string>
-    <string name="brain_q5">Identify the primary function of the Temporal Lobe</string>
+    <string name="brain_q5">Identify the primary function of the Temporal Lobe.</string>
     <string name="brain_a5">Processes the information we hear.</string>
-    <string name="brain_q6">Identify an acronym helpful in remembering the 4 lobes of the cerebral cortex</string>
+    <string name="brain_q6">Identify an acronym helpful in remembering the 4 lobes of the cerebral cortex.</string>
     <string name="brain_a6">Freud Tore Pants Off</string>
-    <string name="brain_q7">Identify the primary function of the Thalamus</string>
+    <string name="brain_q7">Identify the primary function of the Thalamus.</string>
     <string name="brain_a7">Forwards information from the senses to other parts of the brain.</string>
 
     <!-- eye -->
+    <string name="eye_q1">Cornea</string>
+    <string name="eye_a1">The outermost lens of the eye that focuses light into the inner eye and protects it from harmful matter.</string>
+    <string name="eye_q2">Retina</string>
+    <string name="eye_a2">The light sensitive layer within the eye that converts images into electrical signals.</string>
+    <string name="eye_q3">Pupil</string>
+    <string name="eye_a3">The hole located in the iris that changes size to allow different amounts of light into the inner eye.</string>
+    <string name="eye_q4">Iris</string>
+    <string name="eye_a4">The colorful structure of the eye that changes the shape of the pupil to allow for different amounts of light to enter the inner eye.</string>
+    <string name="eye_q5">Ciliary Body (muscle)</string>
+    <string name="eye_a5">A muscle that controls the shape of the lens to better focus the light onto the retina of the inner eye.</string>
+    <string name="eye_q6">Lens</string>
+    <string name="eye_a6">The transparent orb within the eye that refracts light to the retina of the eye.</string>
+    <string name="eye_q7">Optic Nerve</string>
+    <string name="eye_a7">The nerve at the back of the eye that transports electric signals to the brain.</string>
 
     <!-- lungs -->
+    <string name="lungs_q1">Epiglottis</string>
+    <string name="lungs_a1">Prevents entry of liquids or solid food through glottis so that food/ liquid would not enter lungs.</string>
+    <string name="lungs_q2">Trachea (windpipe)</string>
+    <string name="lungs_a2">Tough flexible tube, protects airway, also prevent collapse or expansion of airway as pressure change in respiratory system. Transports air down the vertebra towards the lungs.</string>
+    <string name="lungs_q3">What is an obstructive disease?</string>
+    <string name="lungs_a3">Persistent slowing of airflow during breathing.</string>
+    <string name="lungs_q4">What is spirometry?</string>
+    <string name="lungs_a4">An objective measurement of lung function.</string>
+    <string name="lungs_q5">Bronchi</string>
+    <string name="lungs_a5">Airway passages that conduct air into the lungs (have cartilage).</string>
+    <string name="lungs_q6">Bronchioles</string>
+    <string name="lungs_a6">Branches of the bronchi, the first passageways by which the air passes through the nose or mouth into the air sacs of the lungs (no cartilage).</string>
+    <string name="lungs_q7">Pharynx</string>
+    <string name="lungs_a7">The throat. A chamber shared by the digestive and respiratory systems, where materials entering the digestive tract pass through.</string>
 
     <!-- skeleton -->
+    <string name="sk_q1">What is the axilla?</string>
+    <string name="sk_a1">The pyramidal space below the shoulder joint - provides passage for the vessels and nerves going to and from the upper limb.</string>
+    <string name="sk_q2">At which anatomical point does the axillary artery begin?</string>
+    <string name="sk_a2">The lateral border of the 1st rib.</string>
+    <string name="sk_q3">The axillary artery continues beyond the axilla as which vessel?</string>
+    <string name="sk_a3">Brachial artery</string>
+    <string name="sk_q4">Name the roots of the brachial plexus?</string>
+    <string name="sk_a4">Anterior rami of C5-T1.</string>
+    <string name="sk_q5">What is Erb’s point?</string>
+    <string name="sk_a5">The site of the upper trunk of the brachial plexus (2–3cm above the clavicle).</string>
+    <string name="sk_q6">Name the muscles in the superficial group of the anterior forearm.</string>
+    <string name="sk_a6">Pronator teres, Flexor carpi radialis, Palmaris longus and Flexor carpi ulnaris.</string>
+    <string name="sk_q7">What are the superficial muscles of the anterior forearm attached to?</string>
+    <string name="sk_a7">The medial epicondyle of the humerus by the common flexor tenson.</string>
 
     <!-- full body -->
-
+    <string name="fl_q1">Lungs</string>
+    <string name="fl_a1">Lungs are the pair of spongy, pinkish-gray organs in our chest. When we inhale (breathe in), air enters our lungs and oxygen from that air moves to our blood.</string>
+    <string name="fl_q2">Heart</string>
+    <string name="fl_a2">The heart is a vital organ. It is a muscle that pumps blood to all parts of human body. The blood pumped by the heart provides the human body with the oxygen and nutrients it needs to function.</string>
+    <string name="fl_q3">Trachea</string>
+    <string name="fl_a3">It is a key part of our respiratory system. When we breathe in, air travels from our nose or mouth through our larynx. It then passes through our trachea to our bronchi.</string>
+    <string name="fl_q4">Brain</string>
+    <string name="fl_a4">The brain is a complex organ that controls thought, memory, emotion, touch, motor skills, vision, breathing, temperature, hunger and every process that regulates our body.</string>
+    <string name="fl_q5">Pupil</string>
+    <string name="fl_a5">The round opening in the center of the iris.</string>
+    <string name="fl_q6">Stomach</string>
+    <string name="fl_a6">The stomach is an important organ and the most dilated portion of the digestive system. The esophagus precedes it, and the small intestine follows.</string>
+    <string name="fl_q7">Pancreas</string>
+    <string name="fl_a7">The pancreas has dual roles, it is an organ of the digestive system and of the endocrine system.</string>
 </resources>
