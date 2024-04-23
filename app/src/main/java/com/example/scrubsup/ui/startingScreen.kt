@@ -52,16 +52,6 @@ fun StartingScreen(
                 .height(200.dp),
             contentScale = ContentScale.Crop
         )
-        Text(
-            text = "Welcome to Scrubs Up!",
-            style = TextStyle(
-                fontWeight = FontWeight.Bold,
-                fontSize = 15.sp
-            ),
-            modifier = Modifier
-                .padding(bottom = 7.dp)
-                .align(Alignment.CenterHorizontally)
-        )
         LazyColumn(
             modifier = Modifier.weight(1f),
             verticalArrangement = Arrangement.spacedBy(10.dp)
@@ -101,8 +91,11 @@ fun CategoryCard(title: String, photo: Int, onClick: () -> Unit) {
         //shape = RoundedCornerShape(20.dp),
         elevation = CardDefaults.cardElevation(7.dp)
     ) {
-        Column(
-            modifier = Modifier.padding(9.dp),
+        Row(
+            modifier = Modifier
+                .padding(9.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.Absolute.Center,
         ) {
             Image(
                 painter = painterResource(id = photo),
@@ -110,14 +103,15 @@ fun CategoryCard(title: String, photo: Int, onClick: () -> Unit) {
                 modifier = Modifier
                     .height(75.dp)
                     .width(90.dp)
-                    .padding(start = 16.dp),
+                    .padding(start = 7.dp, end = 7.dp),
                 contentScale = ContentScale.Crop
             )
             Text(
+                modifier = Modifier.padding(5.dp),
                 text = title,
                 style = TextStyle(
                     fontWeight = FontWeight.Bold,
-                    fontSize = 17.sp
+                    fontSize = 20.sp
                 )
             )
         }

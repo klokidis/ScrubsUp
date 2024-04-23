@@ -9,6 +9,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import com.example.scrubsup.data.Datasource
+import com.example.scrubsup.model.Cards
 import com.example.scrubsup.model.Quiz
 
 
@@ -19,9 +20,11 @@ class ViewModel : ViewModel() {
 
     private var subject: Int = 0
     private var questions: List<Quiz> = Datasource().loadQuestions()
+    private var cardQuestions: List<Cards> = Datasource().loadCardQuestions()
 
     init {
         resetGame()
+        resetCards()
     }
 
     fun resetGame() {
@@ -30,6 +33,16 @@ class ViewModel : ViewModel() {
                 answerCount = 0,
                 isOver = false,
                 rightAnswerCount = 0,
+            )
+        }
+        updateQuestion()
+    }
+
+    fun resetCards() {
+        _uiState.update { currentState ->
+            currentState.copy(
+                isQuestionShown = true,
+                currentIndex = 0
             )
         }
         updateQuestion()
@@ -45,6 +58,36 @@ class ViewModel : ViewModel() {
             )
         }
         updateQuestion()
+    }
+
+    fun chooseCardTheme(cardSubject: Int){
+        _uiState.update { currentState ->
+            currentState.copy(
+                isQuestionShown = false,
+                currentIndex = 0,
+                memoryCards = cardQuestions.filter { it.subject == cardSubject },
+            )
+        }
+    }
+
+    fun ChangeVisibilityCards() {
+        _uiState.update { currentState ->
+            currentState.copy(isQuestionShown = !_uiState.value.isQuestionShown)
+        }
+    }
+
+    fun onNextCard() {
+        _uiState.update { currentState ->
+            currentState.copy(currentIndex = _uiState.value.currentIndex.plus(1),
+                isQuestionShown = true)
+        }
+    }
+
+    fun onPreviousCard() {
+        _uiState.update { currentState ->
+            currentState.copy(currentIndex = _uiState.value.currentIndex.minus(1),
+                isQuestionShown = true)
+        }
     }
 
     private fun updateQuestion(){

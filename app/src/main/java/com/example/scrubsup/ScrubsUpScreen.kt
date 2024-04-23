@@ -143,20 +143,25 @@ fun ScrubsUpApp(
                 )
             }
             composable(route = ScrubScreen.ChooseCard.name) {
+                viewModel.resetCards()
                 ChooseList(
                     onButtonCard = {
-                        viewModel.chooseQuizTheme(it.stringResourceId)
+                        viewModel.chooseCardTheme(it.stringResourceId)
                         navController.navigate(ScrubScreen.Card.name)
                     },
                     Datasource().loadCardSubject()
                 )
             }
-            //composable(route = ScrubScreen.Card.name) {
-                //cardScreen(
-                   // uiState.card.htmlString,
-                   // uiState.card.details,
-                //)
-            //}
+            composable(route = ScrubScreen.Card.name) {
+                CardScreen(
+                    CardsList = uiState.memoryCards,
+                    currentIndex = uiState.currentIndex,
+                    isQuestionShown = uiState.isQuestionShown,
+                    onAnswerShown = { viewModel.ChangeVisibilityCards() },
+                    PreviousCard = { viewModel.onPreviousCard() },
+                    NextCard = { viewModel.onNextCard() }
+                )
+            }
         }
     }
 }
