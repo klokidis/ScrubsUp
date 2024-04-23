@@ -48,7 +48,7 @@
     <string name="dendrite">Dendrite</string>
     <string name="dendrite_details">Several dendrites receive signals from other neurons. If enough signals reach the threshold necessary, an axon potential is initiated and travels down the axon.</string>
     <string name="axon">Myelinate axon</string>
-    <string name="axon_details">oligodendroglial cells are responsible for the synthesis and maintenance of myelin, whereas Schwann cells subserve this role in the peripheral nervous system (PNS).</string>
+    <string name="axon_details">Οligodendroglial cells are responsible for the synthesis and maintenance of myelin, whereas Schwann cells subserve this role in the peripheral nervous system (PNS).</string>
     <string name="terminal">Axon terminal</string>
     <string name="terminal_details">Axon terminals are the ends of axons which transmit messages to other cells via use of neurotransmitters at synapses</string>
     <!-- heart -->
@@ -73,7 +73,7 @@
     <string name="left_art">Left Atrium</string>
     <string name="left_art_details">The upper left chamber of the heart. The left atrium receives oxygenated blood from the lungs and pumps it down into the left ventricle which delivers it to the body.</string>
     <!-- brain -->
-    <string name="frontal_lobe">Human Heart</string>
+    <string name="frontal_lobe">Frontal Lobe</string>
     <string name="frontal_lobe_details">The frontal lobes are important for voluntary movement, expressive language and for managing higher level executive functions. Executive functions refer to a collection of cognitive skills including the capacity to plan, organize, initiate, self-monitor and control one’s responses in order to achieve a goal.</string>
     <string name="parietal_lobe">Parietal Lobe</string>
     <string name="parietal_lobe_details">The parietal lobes can be divided into two functional regions. One involves sensation and perception and the other is concerned with integrating sensory input, primarily with the visual system. The first function integrates sensory information to form a single perception (cognition).</string>
@@ -227,8 +227,8 @@
     <string name="brain_a4">Processes information received from touch.</string>
     <string name="brain_q5">Identify the primary function of the Temporal Lobe.</string>
     <string name="brain_a5">Processes the information we hear.</string>
-    <string name="brain_q6">Identify an acronym helpful in remembering the 4 lobes of the cerebral cortex.</string>
-    <string name="brain_a6">Freud Tore Pants Off</string>
+    <string name="brain_q6">What is the difference between a gyrus and a sulcus?</string>
+    <string name="brain_a6">A gyrus is a bump in the brain, a sulcus is a groove.</string>
     <string name="brain_q7">Identify the primary function of the Thalamus.</string>
     <string name="brain_a7">Forwards information from the senses to other parts of the brain.</string>
 
