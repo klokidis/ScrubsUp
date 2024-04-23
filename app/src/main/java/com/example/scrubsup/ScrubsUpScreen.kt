@@ -23,6 +23,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.scrubsup.data.Datasource
+import com.example.scrubsup.ui.CardScreen
 import com.example.scrubsup.ui.ChooseList
 import com.example.scrubsup.ui.ModelScreen3D
 import com.example.scrubsup.ui.QuizScreen
