@@ -3,6 +3,8 @@
 <string name="app_name">Νυστέρια Πάνω</string>
 <string name="top_bar">Επίλεξε</string>
 <string name="card">Κάρτες Απομνημόνευσης</string>
+<string name="show_answer">Κάντε κλικ στην κάρτα για να δείτε την απάντηση</string>
+<string name="show_question">Κάντε κλικ στην απάντηση για να δείτε ξανά την ερώτηση</string>
 <string name="heart">Καρδιά</string>
 <string name="brain">Εγκέφαλος</string>
 <string name="lungs">Πνεύμονες</string>

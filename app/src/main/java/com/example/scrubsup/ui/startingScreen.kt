@@ -5,6 +5,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -23,6 +24,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.res.stringResource
 import com.example.scrubsup.R
 
 @Composable
@@ -56,21 +59,21 @@ fun StartingScreen(
         ) {
             item {
                 CategoryCard(
-                    title = "Memory Cards",
+                    title = stringResource(id = R.string.card),
                     photo = R.drawable.cards,
                     onClick = onButtonCard
                 )
             }
             item {
                 CategoryCard(
-                    title = "3D Models",
+                    title = stringResource(id = R.string.model_3d),
                     photo = R.drawable._d,
                     onClick = onButtonModels
                 )
             }
             item {
                 CategoryCard(
-                    title = "Quiz",
+                    title = stringResource(id = R.string.quiz),
                     photo = R.drawable.quiz,
                     onClick = onButtonQuiz
                 )
@@ -84,9 +87,13 @@ fun CategoryCard(title: String, photo: Int, onClick: () -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .clickable { onClick() }
+            .clickable {  }
+            .shadow(3.dp, shape = RoundedCornerShape(16.dp))
             .clip(MaterialTheme.shapes.medium),
-        //shape = RoundedCornerShape(20.dp),
+        onClick = onClick,
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surface
+        ),
         elevation = CardDefaults.cardElevation(7.dp)
     ) {
         Row(

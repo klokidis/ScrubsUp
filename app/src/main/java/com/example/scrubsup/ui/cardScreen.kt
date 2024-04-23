@@ -116,9 +116,9 @@ fun CardScreen(
                             contentScale = ContentScale.Fit
                         )
                         Text(
-                            "Click the card to see the answer",
+                            text = stringResource(id = R.string.show_question),
                             modifier = Modifier.align(Alignment.BottomCenter),
-                            style = TextStyle(fontSize = 19.sp)
+                            style = TextStyle(fontSize = 17.sp)
                         )
                     }
                 }
@@ -150,7 +150,7 @@ fun CardScreen(
                         )
                         Spacer(modifier = Modifier.weight(1f))
                         Text(
-                            "Click the answer to see the question again",
+                            text = stringResource(id = R.string.show_question),
                             style = TextStyle(fontSize = 15.sp),
                             modifier = Modifier
                                 .align(Alignment.CenterHorizontally)

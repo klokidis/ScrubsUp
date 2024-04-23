@@ -2,6 +2,8 @@
     <string name="app_name">Scrubs Up</string>
     <string name="top_bar">Choose</string>
     <string name="card">Memory Cards</string>
+    <string name="show_answer">Click the card to see the answer</string>
+    <string name="show_question">Click the answer to see the question again</string>
     <string name="heart">Heart</string>
     <string name="brain">Brain</string>
     <string name="lungs">lungs</string>
