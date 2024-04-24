@@ -136,7 +136,8 @@ fun ScrubsUpApp(
                     },
                     isOver = uiState.isOver,
                     goBack = {
-                        navController.popBackStack(ScrubScreen.ChooseQuiz.name,false)
+                        navController.popBackStack(ScrubScreen.ChooseQuiz.name,true)
+                        viewModel.resetGame()
                     },
                     onPlayAgain = {
                         viewModel.resetGame()
@@ -158,7 +159,7 @@ fun ScrubsUpApp(
                     CardsList = uiState.memoryCards,
                     currentIndex = uiState.currentIndex,
                     isQuestionShown = uiState.isQuestionShown,
-                    onAnswerShown = { viewModel.ChangeVisibilityCards() },
+                    onAnswerShown = { viewModel.changeVisibilityCards() },
                     PreviousCard = { viewModel.onPreviousCard() },
                     NextCard = { viewModel.onNextCard() }
                 )

@@ -45,7 +45,6 @@ class ViewModel : ViewModel() {
                 currentIndex = 0
             )
         }
-        updateQuestion()
     }
 
     fun chooseQuizTheme(cardSubject: Int){
@@ -70,7 +69,7 @@ class ViewModel : ViewModel() {
         }
     }
 
-    fun ChangeVisibilityCards() {
+    fun changeVisibilityCards() {
         _uiState.update { currentState ->
             currentState.copy(isQuestionShown = !_uiState.value.isQuestionShown)
         }
