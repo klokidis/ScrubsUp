@@ -156,12 +156,12 @@ fun ScrubsUpApp(
             }
             composable(route = ScrubScreen.Card.name) {
                 CardScreen(
-                    CardsList = uiState.memoryCards,
+                    cardsList = uiState.memoryCards,
                     currentIndex = uiState.currentIndex,
                     isQuestionShown = uiState.isQuestionShown,
                     onAnswerShown = { viewModel.changeVisibilityCards() },
-                    PreviousCard = { viewModel.onPreviousCard() },
-                    NextCard = { viewModel.onNextCard() }
+                    previousCard = { viewModel.onPreviousCard() },
+                    nextCard = { viewModel.onNextCard() }
                 )
             }
         }

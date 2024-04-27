@@ -21,6 +21,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
@@ -50,7 +51,7 @@ fun QuizScreen(
         .fillMaxWidth()
         .padding(end = 20.dp, start = 20.dp, top = 10.dp)
 ){
-    var enableClick by rememberSaveable { mutableStateOf(0) } //MAKE IT VIEWMODEL
+    var enableClick by rememberSaveable { mutableIntStateOf(0) } //MAKE IT VIEWMODEL
     var answer by rememberSaveable { mutableStateOf(false) }
 
     Column(
@@ -122,7 +123,7 @@ fun QuizScreen(
                 }
                 enableClick = 1
             }) {
-            Text(text = stringResource(id = question.answers[0].first),textAlign = TextAlign.Center,)
+            Text(text = stringResource(id = question.answers[0].first),textAlign = TextAlign.Center)
 
         }
         Button(
@@ -141,7 +142,7 @@ fun QuizScreen(
                 }
                 enableClick = 1
             }) {
-            Text(text = stringResource(id = question.answers[1].first),textAlign = TextAlign.Center,)
+            Text(text = stringResource(id = question.answers[1].first),textAlign = TextAlign.Center)
         }
         Button(
             colors = if (enableClick == 0) {
@@ -159,7 +160,7 @@ fun QuizScreen(
                 }
                 enableClick = 1
             }) {
-            Text(text = stringResource(id = question.answers[2].first),textAlign = TextAlign.Center,)
+            Text(text = stringResource(id = question.answers[2].first),textAlign = TextAlign.Center)
         }
         Button(
             colors = if (enableClick == 0) {
@@ -177,7 +178,7 @@ fun QuizScreen(
                 }
                 enableClick = 1
             }) {
-            Text(text = stringResource(id = question.answers[3].first),textAlign = TextAlign.Center,)
+            Text(text = stringResource(id = question.answers[3].first),textAlign = TextAlign.Center)
         }
         Row(
             verticalAlignment = Alignment.CenterVertically,

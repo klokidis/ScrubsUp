@@ -18,7 +18,6 @@ class ViewModel : ViewModel() {
     private val _uiState = MutableStateFlow(UiState())
     val uiState: StateFlow<UiState> = _uiState.asStateFlow()
 
-    private var subject: Int = 0
     private var questions: List<Quiz> = Datasource().loadQuestions()
     private var cardQuestions: List<Cards> = Datasource().loadCardQuestions()
 

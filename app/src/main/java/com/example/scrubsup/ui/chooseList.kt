@@ -28,7 +28,6 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.scrubsup.R
-import com.example.scrubsup.data.Datasource
 import com.example.scrubsup.model.Models
 
 @Composable

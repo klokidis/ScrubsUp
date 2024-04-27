@@ -41,12 +41,12 @@ import com.example.scrubsup.model.Cards
 
 @Composable
 fun CardScreen(
-    CardsList: List<Cards>,
+    cardsList: List<Cards>,
     currentIndex: Int,
     isQuestionShown: Boolean,
     onAnswerShown: () -> Unit,
-    PreviousCard: () -> Unit,
-    NextCard: () -> Unit,
+    previousCard: () -> Unit,
+    nextCard: () -> Unit,
 ) {
 
     val cardSize = 350.dp // Set the size of the card
@@ -97,7 +97,7 @@ fun CardScreen(
                     ) {
                         //Display the question on the front side of the card
                         Text(
-                            text = stringResource(CardsList[currentIndex].question),
+                            text = stringResource(cardsList[currentIndex].question),
                             textAlign = TextAlign.Center,
                             modifier = Modifier.fillMaxSize(),
                             style = TextStyle(
@@ -108,7 +108,7 @@ fun CardScreen(
                         Spacer(modifier = Modifier.height(16.dp))
                         //Display image below the question
                         Image(
-                            painter = painterResource(id = CardsList[currentIndex].imageResourceId),
+                            painter = painterResource(id = cardsList[currentIndex].imageResourceId),
                             contentDescription = null,
                             modifier = Modifier
                                 .size(imageSize)
@@ -135,7 +135,7 @@ fun CardScreen(
                     ) {
                         Spacer(modifier = Modifier.weight(1f))
                         Text(
-                            text = stringResource(CardsList[currentIndex].answers),
+                            text = stringResource(cardsList[currentIndex].answers),
                             textAlign = TextAlign.Center,
                             style = TextStyle(
                                 fontSize = 30.sp,
@@ -175,7 +175,7 @@ fun CardScreen(
                     .width(127.dp),
                 shape = RoundedCornerShape(bottomStart = 10.dp, topEnd = 10.dp),
                 onClick = {
-                    PreviousCard()
+                    previousCard()
                 },
                 enabled = currentIndex > 0
             ) {
@@ -192,9 +192,9 @@ fun CardScreen(
                     .width(127.dp),
                 shape = RoundedCornerShape(bottomEnd = 10.dp, topStart = 10.dp),
                 onClick = {
-                    NextCard()
+                    nextCard()
                 },
-                enabled = currentIndex < CardsList.size - 1
+                enabled = currentIndex < cardsList.size - 1
             ) {
                 Text("Next")
                 Icon(
