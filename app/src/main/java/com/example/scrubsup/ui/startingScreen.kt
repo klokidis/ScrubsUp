@@ -3,7 +3,6 @@ package com.example.scrubsup.ui
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
@@ -53,32 +52,23 @@ fun StartingScreen(
                 .height(200.dp),
             contentScale = ContentScale.Crop
         )
-        LazyColumn(
-            modifier = Modifier.weight(1f),
-            verticalArrangement = Arrangement.spacedBy(10.dp)
-        ) {
-            item {
-                CategoryCard(
-                    title = stringResource(id = R.string.card),
-                    photo = R.drawable.cards,
-                    onClick = onButtonCard
-                )
-            }
-            item {
-                CategoryCard(
-                    title = stringResource(id = R.string.model_3d),
-                    photo = R.drawable._d,
-                    onClick = onButtonModels
-                )
-            }
-            item {
-                CategoryCard(
-                    title = stringResource(id = R.string.quiz),
-                    photo = R.drawable.quiz,
-                    onClick = onButtonQuiz
-                )
-            }
-        }
+        CategoryCard(
+            title = stringResource(id = R.string.card),
+            photo = R.drawable.cards,
+            onClick = onButtonCard
+        )
+
+        CategoryCard(
+            title = stringResource(id = R.string.model_3d),
+            photo = R.drawable._d,
+            onClick = onButtonModels
+        )
+
+        CategoryCard(
+            title = stringResource(id = R.string.quiz),
+            photo = R.drawable.quiz,
+            onClick = onButtonQuiz
+        )
     }
 }
 
@@ -87,6 +77,7 @@ fun CategoryCard(title: String, photo: Int, onClick: () -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
+            .padding(top = 6.dp, bottom = 6.dp)
             .clickable {  }
             .shadow(3.dp, shape = RoundedCornerShape(16.dp))
             .clip(MaterialTheme.shapes.medium),
