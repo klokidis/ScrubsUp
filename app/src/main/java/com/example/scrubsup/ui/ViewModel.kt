@@ -94,7 +94,7 @@ class ViewModel : ViewModel() {
         }
     }
 
-    fun checkUserGuess(userGuess:Boolean) {
+    fun checkUserGuess(userGuess: Boolean) {
         val updatedScore = _uiState.value.answerCount.plus(1)
         var rightAnswersUpdated = _uiState.value.rightAnswerCount
         if (userGuess) {
@@ -132,6 +132,7 @@ class ViewModel : ViewModel() {
             )
         }
     }
+
     val tabItems = listOf(
         TabItem(
             title = R.string.model_3d_one

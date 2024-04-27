@@ -40,9 +40,9 @@ import com.example.scrubsup.model.Quiz
 
 @Composable
 fun QuizScreen(
-    question:Quiz,
-    answerCount:Int,
-    correctAnswerCount:Int,
+    question: Quiz,
+    answerCount: Int,
+    correctAnswerCount: Int,
     onButtonClicked: (Boolean) -> Unit,
     isOver:Boolean,
     goBack:() -> Unit,
