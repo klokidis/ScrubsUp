@@ -2,10 +2,19 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="App">
+      <entry key="ScrubsUpScreenNavigationTest">
         <State />
       </entry>
       <entry key="app">
+        <State />
+      </entry>
+      <entry key="scrubsUpNavHost_clickCardsCategory_navigatesCards()">
+        <State />
+      </entry>
+      <entry key="scrubsUpNavHost_clickModelCategory_navigatesModel()">
+        <State />
+      </entry>
+      <entry key="scrubsUpNavHost_clickPrevButton_navigatesToStart()">
         <State />
       </entry>
     </value>
