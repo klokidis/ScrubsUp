@@ -68,14 +68,14 @@ fun QuizScreen(
            horizontalArrangement = Arrangement.Absolute.Center,
            modifier = Modifier.fillMaxWidth()
         ) {
-           Spacer(Modifier.weight(2f))
+           Spacer(Modifier.weight(3f))
            Text(
                text = stringResource(R.string.question_count, answerCount+1),
                style = MaterialTheme.typography.bodyMedium,
                textAlign = TextAlign.Center,
                modifier = Modifier.padding(start = 4.dp)
            )
-           Spacer(Modifier.weight(1f))
+           Spacer(Modifier.weight(2f))
                Text(
                    modifier = Modifier
                        .padding(end = 4.dp)
