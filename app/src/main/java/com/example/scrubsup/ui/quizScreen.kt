@@ -107,78 +107,28 @@ fun QuizScreen(
             contentScale = ContentScale.Crop
         )
         Spacer(modifier = Modifier.padding(2.dp))
-        Button(
-            colors = if (enableClick == 0) {
-                ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
-            } else {
-                if (question.answers[0].second) {
-                    ButtonDefaults.buttonColors(containerColor = Color.Green)
+        question.answers.forEach {
+            Button(
+                colors = if (enableClick == 0) {
+                    ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
                 } else {
-                    ButtonDefaults.buttonColors(containerColor = Color.Red)
-                }
-            },
-            modifier = modifier, onClick = {
-                if (enableClick == 0) {
-                    answer = question.answers[0].second
-                }
-                enableClick = 1
-            }) {
-            Text(text = stringResource(id = question.answers[0].first),textAlign = TextAlign.Center)
-
-        }
-        Button(
-            colors = if (enableClick == 0) {
-                ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
-            } else {
-                if (question.answers[1].second) {
-                    ButtonDefaults.buttonColors(containerColor = Color.Green)
-                } else {
-                    ButtonDefaults.buttonColors(containerColor = Color.Red)
-                }
-            },
-            modifier = modifier, onClick = {
-                if (enableClick == 0) {
-                    answer = question.answers[1].second
-                }
-                enableClick = 1
-            }) {
-            Text(text = stringResource(id = question.answers[1].first),textAlign = TextAlign.Center)
-        }
-        Button(
-            colors = if (enableClick == 0) {
-                ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
-            } else {
-                if (question.answers[2].second) {
-                    ButtonDefaults.buttonColors(containerColor = Color.Green)
-                } else {
-                    ButtonDefaults.buttonColors(containerColor = Color.Red)
-                }
-            },
-            modifier = modifier, onClick = {
-                if (enableClick == 0) {
-                    answer = question.answers[2].second
-                }
-                enableClick = 1
-            }) {
-            Text(text = stringResource(id = question.answers[2].first),textAlign = TextAlign.Center)
-        }
-        Button(
-            colors = if (enableClick == 0) {
-                ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
-            } else {
-                if (question.answers[3].second) {
-                    ButtonDefaults.buttonColors(containerColor = Color.Green)
-                } else {
-                    ButtonDefaults.buttonColors(containerColor = Color.Red)
-                }
-            },
-            modifier = modifier, onClick = {
-                if (enableClick == 0) {
-                    answer = question.answers[3].second
-                }
-                enableClick = 1
-            }) {
-            Text(text = stringResource(id = question.answers[3].first),textAlign = TextAlign.Center)
+                    if (it.second) {
+                        ButtonDefaults.buttonColors(containerColor = Color.Green)
+                    } else {
+                        ButtonDefaults.buttonColors(containerColor = Color.Red)
+                    }
+                },
+                modifier = modifier, onClick = {
+                    if (enableClick == 0) {
+                        answer = it.second
+                    }
+                    enableClick = 1
+                }) {
+                Text(
+                    text = stringResource(id = it.first),
+                    textAlign = TextAlign.Center
+                )
+            }
         }
         Row(
             verticalAlignment = Alignment.CenterVertically,
