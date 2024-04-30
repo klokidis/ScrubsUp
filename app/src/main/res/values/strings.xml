@@ -25,7 +25,10 @@
     <string name="cardiology">Cardiology</string>
     <string name="neurology">Neurology</string>
     <string name="trauma">Trauma</string>
-    <string name="respiratory">respiratory system</string>
+    <string name="upperlimb">Upper Limb</string>
+    <string name="lowerlimb">Lower Limb</string>
+    <string name="respiratory">Respiratory System</string>
+    <string name="wholeskeleton">Whole Skeleton</string>
     <string name="next">Next</string>
     <!-- human body -->
     <string name="Trachea">Trachea</string>
@@ -168,6 +171,56 @@
     <string name="exit">Exit</string>
     <string name="play_again">Play Again</string>
 
+    <!-- Whole Skeleton -->
+    <string name="skeleton1">Fall onto face. Painful left cheek area. OM and OM-30 views.</string>
+    <string name="skeleton1_1">Injury</string>
+    <string name="skeleton1_2">No injury</string>
+    <string name="skeleton2">Inversion injury to ankle. Unable to bear weight. AP and lateral views.</string>
+    <string name="skeleton2_1">Injury</string>
+    <string name="skeleton2_2">No injury</string>
+    <string name="skeleton3">Fall on outstretched hand. Pain and restricted shoulder abduction. 2 AP clavicle views.</string>
+    <string name="skeleton3_1">Injury</string>
+    <string name="skeleton3_2">No injury</string>
+    <string name="skeleton4">Fall with direct trauma to knee. Pain, swelling and reduced knee movement. AP and horizontal beam lateral views.</string>
+    <string name="skeleton4_1">Injury</string>
+    <string name="skeleton4_2">No injury</string>
+    <string name="skeleton5">Flexion/extension injury to neck. Single open-mouth odontoid peg views (other views were normal).</string>
+    <string name="skeleton5_1">Injury</string>
+    <string name="skeleton5_2">No injury</string>
+
+    <!-- Upper Limb -->
+    <string name="upper1">Punch injury to hand. DP and Oblique views.</string>
+    <string name="upper1_1">Injury</string>
+    <string name="upper1_2">No injury</string>
+    <string name="upper2">Fall on shoulder. Pain and reduced range of movement. AP and Axial views.</string>
+    <string name="upper2_1">Injury</string>
+    <string name="upper2_2">No injury</string>
+    <string name="upper3">Fall on outstretched hand. Clavicle pain and tenderness. 2 AP views.</string>
+    <string name="upper3_1">Injury</string>
+    <string name="upper3_2">No injury</string>
+    <string name="upper4">Fall on outstretched hand. Painful and tender forearm. AP and Lateral views.</string>
+    <string name="upper4_1">Injury</string>
+    <string name="upper4_2">No injury</string>
+    <string name="upper5">Injury to elbow when intoxicated. Wound to skin. AP and Lateral views.</string>
+    <string name="upper5_1">Foreign body</string>
+    <string name="upper5_2">No foreign body</string>
+
+    <!-- Lower Limb -->
+    <string name="lower1">Twisted ankle. Pain medially and laterally. AP and lateral views.</string>
+    <string name="lower1_1">Injury</string>
+    <string name="lower1_2">No injury</string>
+    <string name="lower2">Twisting injury. Painful foot. DP and oblique views.</string>
+    <string name="lower2_1">Injury</string>
+    <string name="lower2_2">No injury</string>
+    <string name="lower3">Patient confused. Fall. Pain in hip. AP view of the pelvis.</string>
+    <string name="lower3_1">Injury</string>
+    <string name="lower3_2">No injury</string>
+    <string name="lower4">Hyperextension injury to knee. Pain and tenderness medially. AP and lateral views.</string>
+    <string name="lower4_1">Injury</string>
+    <string name="lower4_2">No injury</string>
+    <string name="lower5">Twisting injury to ankle. Pain and tenderness. Unable to walk. Single AP view (other views were normal).</string>
+    <string name="lower5_1">Foreign body</string>
+    <string name="lower5_2">No foreign body</string>
 
     <!-- CARDS -->
     <!-- arterial vessel -->

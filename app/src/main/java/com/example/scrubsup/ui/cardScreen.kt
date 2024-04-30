@@ -118,7 +118,7 @@ fun CardScreen(
                         Text(
                             text = stringResource(id = R.string.show_question),
                             modifier = Modifier.align(Alignment.BottomCenter),
-                            style = TextStyle(fontSize = 17.sp)
+                            style = TextStyle(fontSize = 15.sp)
                         )
                     }
                 }

@@ -26,7 +26,10 @@
 <string name="cardiology">Καρδιολογία</string>
 <string name="neurology">Νευρολογία</string>
 <string name="trauma">Τραύμα</string>
-<string name="respiratory">Αναπνευστικό σύστημα</string>
+<string name="respiratory">Αναπνευστικό Σύστημα</string>
+<string name="wholeskeleton">Ολόκληρος o Σκελετός</string>
+<string name="upperlimb">Ανω Άκρο</string>
+<string name="lowerlimb">Κάτω Άκρο</string>
 <string name="next">Επόμενο</string>
 <!-- human body -->
 <string name="Trachea">Τραχεία</string>
@@ -168,6 +171,58 @@
 <string name="you_scored">\"Σκόραρες: %d\"</string>
 <string name="exit">Έξοδος</string>
 <string name="play_again">Παίξε ξανά</string>
+
+
+<!-- Whole Skeleton -->
+    <string name="skeleton1">Πτώση στο πρόσωπο. Επώδυνη περιοχή του αριστερού μάγουλου. Προβολές OM και OM-30.</string>
+    <string name="skeleton1_1">Τραυματισμός</string>
+    <string name="skeleton1_2">Κανένας τραυματισμός</string>
+    <string name="skeleton2">Αναστροφή τραυματισμού στον αστράγαλο. Δεν μπορεί να αντέξει βάρος. AP και πλευρικές όψεις.</string>
+    <string name="skeleton2_1">Τραυματισμός</string>
+    <string name="skeleton2_2">Κανένας τραυματισμός</string>
+    <string name="skeleton3">Πτώση σε απλωμένο χέρι. Πόνος και περιορισμένη απαγωγή στον ώμο. 2 όψεις κλείδας AP.</string>
+    <string name="skeleton3_1">Τραυματισμός</string>
+    <string name="skeleton3_2">Κανένας τραυματισμός</string>
+    <string name="skeleton4">Πτώση με άμεσο τραύμα στο γόνατο. Πόνος, πρήξιμο και μειωμένη κίνηση του γόνατος. Πλευρικές όψεις AP και οριζόντιας δοκού.</string>
+    <string name="skeleton4_1">Τραυματισμός</string>
+    <string name="skeleton4_2">Κανένας τραυματισμός</string>
+    <string name="skeleton5">Τραυματισμός κάμψης/έκτασης στον αυχένα. Μονές οδοντοειδείς όψεις με ανοιχτό στόμα (οι άλλες όψεις ήταν φυσιολογικές).</string>
+    <string name="skeleton5_1">Τραυματισμός</string>
+    <string name="skeleton5_2">Κανένας τραυματισμός</string>
+
+    <!-- Upper Limb -->
+    <string name="upper1">Τραυματισμός με γροθιά στο χέρι. DP και Πλάγιες όψεις.</string>
+    <string name="upper1_1">Τραυματισμός</string>
+    <string name="upper1_2">Κανένας τραυματισμός</string>
+    <string name="upper2">Πτώση στον ώμο. Πόνος και μειωμένο εύρος κίνησης. AP και Αξονικές όψεις.</string>
+    <string name="upper2_1">Τραυματισμός</string>
+    <string name="upper2_2">Κανένας τραυματισμός</string>
+    <string name="upper3">Πτώση σε απλωμένο χέρι. Πόνος και ευαισθησία στην κλείδα. 2 προβολές AP.</string>
+    <string name="upper3_1">Τραυματισμός</string>
+    <string name="upper3_2">Κανένας τραυματισμός</string>
+    <string name="upper4">Πτώση σε απλωμένο χέρι. Επώδυνος και τρυφερός πήχης. AP και πλευρικές όψεις.</string>
+    <string name="upper4_1">Τραυματισμός</string>
+    <string name="upper4_2">Κανένας τραυματισμός</string>
+    <string name="upper5">Τραυματισμός στον αγκώνα σε μέθη. Πληγή στο δέρμα. AP και πλευρικές όψεις.</string>
+    <string name="upper5_1">Ξένο σώμα</string>
+    <string name="upper5_2">Χωρίς ξένο σώμα</string>
+
+    <!-- Lower Limb -->
+    <string name="lower1">Στραμπουληγμένος αστράγαλος. Πόνος έσω και πλάγια. AP και πλευρικές όψεις.</string>
+    <string name="lower1_1">Τραυματισμός</string>
+    <string name="lower1_2">Κανένας Τραυματισμός</string>
+    <string name="lower2">Τραυματισμός συστροφής. Επώδυνο πόδι. DP και πλάγιες όψεις.</string>
+    <string name="lower2_1">Τραυματισμός</string>
+    <string name="lower2_2">Κανένας Τραυματισμός</string>
+    <string name="lower3">Ο ασθενής μπερδεμένος. Πτώση. Πόνος στο ισχίο. Άποψη AP της λεκάνης.</string>
+    <string name="lower3_1">Τραυματισμός</string>
+    <string name="lower3_2">Κανένας Τραυματισμός</string>
+    <string name="lower4">Τραυματισμός υπερέκτασης στο γόνατο. Πόνος και ευαισθησία μεσαία. AP και πλευρικές όψεις.</string>
+    <string name="lower4_1">Τραυματισμός</string>
+    <string name="lower4_2">Κανένας Τραυματισμός</string>
+    <string name="lower5">Τραυματισμός με συστροφή στον αστράγαλο. Πόνος και ευαισθησία. Ανίκανος να περπατήσει. Ενιαία προβολή AP (άλλες προβολές ήταν κανονικές).</string>
+    <string name="lower5_1">Τραυματισμός</string>
+    <string name="lower5_2">Κανένας Τραυματισμός</string>
 
 
 <!-- CARDS -->

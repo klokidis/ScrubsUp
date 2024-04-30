@@ -110,9 +110,24 @@ class Datasource(){
                 R.drawable.lungs,
                 "",
                 listOf()),
+            Models(
+                R.string.wholeskeleton,
+                R.drawable.wholeskeleton,
+                "",
+                listOf()),
+            Models(
+                R.string.upperlimb,
+                R.drawable.upper,
+                "",
+                listOf()),
+            Models(
+                R.string.lowerlimb,
+                R.drawable.lower,
+                "",
+                listOf()),
         )
     }
-
+    
     fun loadCardSubject(): List<Models> {
         return listOf(
             Models(
@@ -609,6 +624,141 @@ class Datasource(){
                     Pair(R.string.lungs5_4,true),
                 ),
                 R.string.respiratory,
+            ),
+            Quiz(
+                R.string.skeleton1,
+                R.drawable.skeleton1,
+                listOf(
+                    Pair(R.string.skeleton1_1,false),
+                    Pair(R.string.skeleton1_2,true),
+                ),
+                R.string.wholeskeleton,
+            ),
+            Quiz(
+                R.string.skeleton2,
+                R.drawable.skeleton2,
+                listOf(
+                    Pair(R.string.skeleton2_1,true),
+                    Pair(R.string.skeleton2_2,false),
+                ),
+                R.string.wholeskeleton,
+            ),
+            Quiz(
+                R.string.skeleton3,
+                R.drawable.skeleton3,
+                listOf(
+                    Pair(R.string.skeleton3_1,true),
+                    Pair(R.string.skeleton3_2,false),
+                ),
+                R.string.wholeskeleton,
+            ),
+            Quiz(
+                R.string.skeleton4,
+                R.drawable.skeleton4,
+                listOf(
+                    Pair(R.string.skeleton4_1,true),
+                    Pair(R.string.skeleton4_2,false),
+                ),
+                R.string.wholeskeleton,
+            ),
+            Quiz(
+                R.string.skeleton5,
+                R.drawable.skeleton5,
+                listOf(
+                    Pair(R.string.skeleton5_1,false),
+                    Pair(R.string.skeleton5_2,true),
+                ),
+                R.string.wholeskeleton,
+            ),
+            Quiz(
+                R.string.upper1,
+                R.drawable.upperlimb1,
+                listOf(
+                    Pair(R.string.upper1_1,true),
+                    Pair(R.string.upper1_2,false),
+                ),
+                R.string.upperlimb,
+            ),
+            Quiz(
+                R.string.upper2,
+                R.drawable.upperlimb2,
+                listOf(
+                    Pair(R.string.upper2_1,false),
+                    Pair(R.string.upper2_2,true),
+                ),
+                R.string.upperlimb,
+            ),
+            Quiz(
+                R.string.upper3,
+                R.drawable.upperlimb3,
+                listOf(
+                    Pair(R.string.upper3_1,false),
+                    Pair(R.string.upper3_2,true),
+                ),
+                R.string.upperlimb,
+            ),
+            Quiz(
+                R.string.upper4,
+                R.drawable.upperlimb4,
+                listOf(
+                    Pair(R.string.upper4_1,true),
+                    Pair(R.string.upper4_2,false),
+                ),
+                R.string.upperlimb,
+            ),
+            Quiz(
+                R.string.upper5,
+                R.drawable.upperlimb5,
+                listOf(
+                    Pair(R.string.upper5_1,true),
+                    Pair(R.string.upper5_2,false),
+                ),
+                R.string.upperlimb,
+            ),
+            Quiz(
+                R.string.lower1,
+                R.drawable.lowerlimb1,
+                listOf(
+                    Pair(R.string.lower1_1,false),
+                    Pair(R.string.lower1_2,true),
+                ),
+                R.string.lowerlimb,
+            ),
+            Quiz(
+                R.string.lower2,
+                R.drawable.lowerlimb2,
+                listOf(
+                    Pair(R.string.lower2_1,true),
+                    Pair(R.string.lower2_2,false),
+                ),
+                R.string.lowerlimb,
+            ),
+            Quiz(
+                R.string.lower3,
+                R.drawable.lowerlimb3,
+                listOf(
+                    Pair(R.string.lower3_1,true),
+                    Pair(R.string.lower3_2,false),
+                ),
+                R.string.lowerlimb,
+            ),
+            Quiz(
+                R.string.lower4,
+                R.drawable.lowerlimb4,
+                listOf(
+                    Pair(R.string.lower4_1,false),
+                    Pair(R.string.lower4_2,true),
+                ),
+                R.string.lowerlimb,
+            ),
+            Quiz(
+                R.string.lower5,
+                R.drawable.lowerlimb5,
+                listOf(
+                    Pair(R.string.lower5_1,true),
+                    Pair(R.string.lower5_2,false),
+                ),
+                R.string.lowerlimb,
             ),
         )
     }
