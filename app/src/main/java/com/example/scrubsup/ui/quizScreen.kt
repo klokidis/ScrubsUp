@@ -109,8 +109,8 @@ fun QuizScreen(
         Spacer(modifier = Modifier.padding(2.dp))
         question.answers.forEach {
             Button(
-                colors = if (enableClick == 0) {
-                    ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
+               colors = if (enableClick == 0) {
+                    ButtonDefaults.filledTonalButtonColors()
                 } else {
                     if (it.second) {
                         ButtonDefaults.buttonColors(containerColor = Color.Green)
