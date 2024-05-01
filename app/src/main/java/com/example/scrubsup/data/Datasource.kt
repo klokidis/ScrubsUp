@@ -112,17 +112,17 @@ class Datasource(){
                 listOf()),
             Models(
                 R.string.wholeskeleton,
-                R.drawable.wholeskeleton,
+                R.drawable.skeleton,
                 "",
                 listOf()),
             Models(
                 R.string.upperlimb,
-                R.drawable.upper,
+                R.drawable.upper_limb,
                 "",
                 listOf()),
             Models(
                 R.string.lowerlimb,
-                R.drawable.lower,
+                R.drawable.lower_limb,
                 "",
                 listOf()),
         )
