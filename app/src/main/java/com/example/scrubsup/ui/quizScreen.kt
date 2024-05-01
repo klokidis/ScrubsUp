@@ -49,7 +49,7 @@ fun QuizScreen(
     onPlayAgain: () -> Unit,
     modifier: Modifier = Modifier
         .fillMaxWidth()
-        .padding(end = 20.dp, start = 20.dp, top = 10.dp)
+        .padding(end = 30.dp, start = 30.dp, top = 10.dp)
 ){
     var enableClick by rememberSaveable { mutableIntStateOf(0) } //MAKE IT VIEWMODEL
     var answer by rememberSaveable { mutableStateOf(false) }

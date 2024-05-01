@@ -131,7 +131,10 @@ fun CardScreen(
                     Column(
                         verticalArrangement = Arrangement.Center,
                         horizontalAlignment = Alignment.CenterHorizontally,
-                        modifier = Modifier.fillMaxSize()
+                        modifier = Modifier.fillMaxSize().clickable {
+                            // Toggle visibility to show question again when clicking on the answer
+                            onAnswerShown()
+                        }
                     ) {
                         Spacer(modifier = Modifier.weight(1f))
                         Text(
@@ -143,10 +146,7 @@ fun CardScreen(
                             modifier = Modifier
                                 .align(Alignment.CenterHorizontally) // Align the text vertically in the box
                                 .padding(horizontal = 16.dp) // Add horizontal padding
-                                .clickable {
-                                    // Toggle visibility to show question again when clicking on the answer
-                                    onAnswerShown()
-                                }
+
                         )
                         Spacer(modifier = Modifier.weight(1f))
                         Text(
