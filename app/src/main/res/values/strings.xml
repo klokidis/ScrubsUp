@@ -6,7 +6,7 @@
     <string name="show_question">Click the answer to see the question again</string>
     <string name="heart">Heart</string>
     <string name="brain">Brain</string>
-    <string name="lungs">lungs</string>
+    <string name="lungs">Lungs</string>
     <string name="previous_button">previous button</string>
     <string name="model_3d">3D models</string>
     <string name="model_3d_one">3D model</string>
@@ -225,7 +225,7 @@
     <!-- CARDS -->
     <!-- arterial vessel -->
     <string name="artv_q1">What are Venae Cavae?</string>
-    <string name="artv_a1">Largest veins in the body, formed from the consecutive merging of smaller veins. Includes the superior (upper) and inferior (lower) vena cava. Function in returning deoxygenated blood to the heart.</string>
+    <string name="artv_a1">Largest veins in the body, formed from the consecutive merging of smaller veins. Includes the superior (upper) and inferior (lower) vena cava.</string>
     <string name="artv_q2">Common Iliac Arteries</string>
     <string name="artv_a2">Two arteries (left and right) branching off of the end of the abdominal aorta near the ilium. Supplies oxygenated blood to the rectum, bladder, reproductive organs, legs, and feet.</string>
     <string name="artv_q3">Descending Aorta</string>

@@ -116,7 +116,7 @@ fun CardScreen(
                             contentScale = ContentScale.Fit
                         )
                         Text(
-                            text = stringResource(id = R.string.show_question),
+                            text = stringResource(id = R.string.show_answer),
                             modifier = Modifier.align(Alignment.BottomCenter),
                             style = TextStyle(fontSize = 15.sp)
                         )
@@ -141,7 +141,7 @@ fun CardScreen(
                             text = stringResource(cardsList[currentIndex].answers),
                             textAlign = TextAlign.Center,
                             style = TextStyle(
-                                fontSize = 30.sp,
+                                fontSize = 24.sp,
                             ),
                             modifier = Modifier
                                 .align(Alignment.CenterHorizontally) // Align the text vertically in the box
@@ -172,7 +172,7 @@ fun CardScreen(
             Button(
                 modifier = Modifier
                     .height(40.dp)
-                    .width(127.dp),
+                    .width(133.dp),
                 shape = RoundedCornerShape(bottomStart = 10.dp, topEnd = 10.dp),
                 onClick = {
                     previousCard()

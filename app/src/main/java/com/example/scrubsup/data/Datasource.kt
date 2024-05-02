@@ -184,7 +184,7 @@ class Datasource(){
             Cards(
                 R.string.artv_q2,
                 R.drawable.image_8,
-                R.string.artv_a1,
+                R.string.artv_a2,
                 R.string.Arterial_vessel
             ),
             Cards(
