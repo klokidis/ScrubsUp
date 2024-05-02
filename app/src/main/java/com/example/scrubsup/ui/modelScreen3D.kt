@@ -34,10 +34,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.viewinterop.AndroidView
 import com.example.scrubsup.R
-import com.example.scrubsup.ui.theme.ScrubsUpTheme
 
 @Composable
 fun ModelScreen3D(html: String, details: List<Pair<Int, Int>>){
@@ -148,13 +146,5 @@ fun DetailsPage(details:List<Pair<Int, Int>>){
                 Text(text = stringResource(id =detail.second),style = MaterialTheme.typography.titleMedium,color = MaterialTheme.colorScheme.onBackground)
             }
         }
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun ModelPreview() {
-    ScrubsUpTheme {
-
     }
 }

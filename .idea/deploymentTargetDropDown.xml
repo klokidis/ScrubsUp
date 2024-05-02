@@ -2,19 +2,58 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="ScrubsUpScreenNavigationTest">
+      <entry key="ScrubsUpOrderScreenTest">
         <State />
+      </entry>
+      <entry key="ScrubsUpScreenNavigationTest">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="$USER_HOME$/.android/avd/Pixel_7_API_30.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-04-30T16:21:18.200293Z" />
+        </State>
       </entry>
       <entry key="app">
-        <State />
-      </entry>
-      <entry key="scrubsUpNavHost_clickCardsCategory_navigatesCards()">
-        <State />
-      </entry>
-      <entry key="scrubsUpNavHost_clickModelCategory_navigatesModel()">
-        <State />
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="$USER_HOME$/.android/avd/Pixel_7_API_30.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-04-30T17:59:52.788027Z" />
+        </State>
       </entry>
       <entry key="scrubsUpNavHost_clickPrevButton_navigatesToStart()">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="$USER_HOME$/.android/avd/Pixel_7_API_30.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-04-30T13:56:09.387853Z" />
+        </State>
+      </entry>
+      <entry key="selectOptionScreen_verifyContent()">
         <State />
       </entry>
     </value>

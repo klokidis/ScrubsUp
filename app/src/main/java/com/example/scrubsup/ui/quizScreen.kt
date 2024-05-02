@@ -49,7 +49,7 @@ fun QuizScreen(
     onPlayAgain: () -> Unit,
     modifier: Modifier = Modifier
         .fillMaxWidth()
-        .padding(end = 20.dp, start = 20.dp, top = 10.dp)
+        .padding(end = 30.dp, start = 30.dp, top = 10.dp)
 ){
     var enableClick by rememberSaveable { mutableIntStateOf(0) } //MAKE IT VIEWMODEL
     var answer by rememberSaveable { mutableStateOf(false) }
@@ -68,14 +68,14 @@ fun QuizScreen(
            horizontalArrangement = Arrangement.Absolute.Center,
            modifier = Modifier.fillMaxWidth()
         ) {
-           Spacer(Modifier.weight(2f))
+           Spacer(Modifier.weight(3f))
            Text(
                text = stringResource(R.string.question_count, answerCount+1),
                style = MaterialTheme.typography.bodyMedium,
                textAlign = TextAlign.Center,
                modifier = Modifier.padding(start = 4.dp)
            )
-           Spacer(Modifier.weight(1f))
+           Spacer(Modifier.weight(2f))
                Text(
                    modifier = Modifier
                        .padding(end = 4.dp)
@@ -107,78 +107,28 @@ fun QuizScreen(
             contentScale = ContentScale.Crop
         )
         Spacer(modifier = Modifier.padding(2.dp))
-        Button(
-            colors = if (enableClick == 0) {
-                ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
-            } else {
-                if (question.answers[0].second) {
-                    ButtonDefaults.buttonColors(containerColor = Color.Green)
+        question.answers.forEach {
+            Button(
+               colors = if (enableClick == 0) {
+                    ButtonDefaults.filledTonalButtonColors()
                 } else {
-                    ButtonDefaults.buttonColors(containerColor = Color.Red)
-                }
-            },
-            modifier = modifier, onClick = {
-                if (enableClick == 0) {
-                    answer = question.answers[0].second
-                }
-                enableClick = 1
-            }) {
-            Text(text = stringResource(id = question.answers[0].first),textAlign = TextAlign.Center)
-
-        }
-        Button(
-            colors = if (enableClick == 0) {
-                ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
-            } else {
-                if (question.answers[1].second) {
-                    ButtonDefaults.buttonColors(containerColor = Color.Green)
-                } else {
-                    ButtonDefaults.buttonColors(containerColor = Color.Red)
-                }
-            },
-            modifier = modifier, onClick = {
-                if (enableClick == 0) {
-                    answer = question.answers[1].second
-                }
-                enableClick = 1
-            }) {
-            Text(text = stringResource(id = question.answers[1].first),textAlign = TextAlign.Center)
-        }
-        Button(
-            colors = if (enableClick == 0) {
-                ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
-            } else {
-                if (question.answers[2].second) {
-                    ButtonDefaults.buttonColors(containerColor = Color.Green)
-                } else {
-                    ButtonDefaults.buttonColors(containerColor = Color.Red)
-                }
-            },
-            modifier = modifier, onClick = {
-                if (enableClick == 0) {
-                    answer = question.answers[2].second
-                }
-                enableClick = 1
-            }) {
-            Text(text = stringResource(id = question.answers[2].first),textAlign = TextAlign.Center)
-        }
-        Button(
-            colors = if (enableClick == 0) {
-                ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
-            } else {
-                if (question.answers[3].second) {
-                    ButtonDefaults.buttonColors(containerColor = Color.Green)
-                } else {
-                    ButtonDefaults.buttonColors(containerColor = Color.Red)
-                }
-            },
-            modifier = modifier, onClick = {
-                if (enableClick == 0) {
-                    answer = question.answers[3].second
-                }
-                enableClick = 1
-            }) {
-            Text(text = stringResource(id = question.answers[3].first),textAlign = TextAlign.Center)
+                    if (it.second) {
+                        ButtonDefaults.buttonColors(containerColor = Color.Green)
+                    } else {
+                        ButtonDefaults.buttonColors(containerColor = Color.Red)
+                    }
+                },
+                modifier = modifier, onClick = {
+                    if (enableClick == 0) {
+                        answer = it.second
+                    }
+                    enableClick = 1
+                }) {
+                Text(
+                    text = stringResource(id = it.first),
+                    textAlign = TextAlign.Center
+                )
+            }
         }
         Row(
             verticalAlignment = Alignment.CenterVertically,
