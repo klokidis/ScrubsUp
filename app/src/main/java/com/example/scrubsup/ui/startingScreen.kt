@@ -22,9 +22,14 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.res.stringResource
+import com.airbnb.lottie.compose.LottieAnimation
+import com.airbnb.lottie.compose.LottieCompositionSpec
+import com.airbnb.lottie.compose.LottieConstants
+import com.airbnb.lottie.compose.rememberLottieComposition
 import com.example.scrubsup.R
 
 @Composable
@@ -43,15 +48,19 @@ fun StartingScreen(
             .verticalScroll(scrollState),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Image(
-            painter = painterResource(id = R.drawable.scrubs),
-            contentDescription = null,
-            modifier = Modifier
-                .size(imageSize)
-                .fillMaxWidth()
-                .height(200.dp),
-            contentScale = ContentScale.Crop
-        )
+
+        Box(
+            contentAlignment = Alignment.Center
+        ) {
+            val composition by rememberLottieComposition(spec = LottieCompositionSpec.RawRes(R.raw.animation1))
+            LottieAnimation(
+                composition = composition,
+                modifier = Modifier.size(280.dp),
+                iterations = LottieConstants.IterateForever
+                )
+
+        }
+
         CategoryCard(
             title = stringResource(id = R.string.card),
             photo = R.drawable.cards,
@@ -78,7 +87,7 @@ fun CategoryCard(title: String, photo: Int, onClick: () -> Unit) {
         modifier = Modifier
             .fillMaxWidth()
             .padding(top = 6.dp, bottom = 6.dp)
-            .clickable {  }
+            .clickable { }
             .shadow(3.dp, shape = RoundedCornerShape(16.dp))
             .clip(MaterialTheme.shapes.medium),
         onClick = onClick,

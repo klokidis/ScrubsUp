@@ -69,6 +69,7 @@ dependencies {
 
     testImplementation(libs.junit)
 
+    implementation(libs.lottie.compose )
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.navigation.compose)
 }
