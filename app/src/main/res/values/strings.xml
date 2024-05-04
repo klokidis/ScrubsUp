@@ -58,7 +58,7 @@
     <string name="terminal_details">Axon terminals are the ends of axons which transmit messages to other cells via use of neurotransmitters at synapses</string>
     <!-- heart -->
     <string name="human_heart">Human Heart</string>
-    <string name="human_heart_details">The heart is a muscular organ about the size of a fist, located just behind and slightly left of the breastbone. The heart pumps blood through the network of arteries and veins called the cardiovascular system.</string>
+    <string name="human_heart_details">The heart, also known as "engine", is a muscular organ about the size of a fist, located just behind and slightly left of the breastbone. The heart pumps blood through the network of arteries and veins called the cardiovascular system.</string>
     <string name="mitral_valve">Mitral Valve</string>
     <string name="mitral_valve_details">Lets oxygen-rich blood from your lungs pass from the left atrium into the left ventricle.</string>
     <string name="aortic_valve">Aortic valve</string>
