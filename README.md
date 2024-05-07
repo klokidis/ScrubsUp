@@ -26,6 +26,3 @@ Scrubs Up is an education app designed to enhance learning about health and huma
 <img src="https://github.com/klokidis/ScrubsUp/assets/132920931/1527c959-2dbc-4474-b05a-dec1a3ada159" width="200" alt="Screenshot3">
 <img src="https://github.com/klokidis/ScrubsUp/assets/132920931/b638667c-6e57-4518-901a-0f632cb4f61e" width="200" alt="Screenshot4">
 
-## License:
-Scrubs Up is licensed under the [MIT License](LICENSE). Feel free to modify and distribute the app for educational purposes.
-
