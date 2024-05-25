@@ -102,7 +102,7 @@ fun CardScreen(
                             modifier = Modifier.fillMaxSize(),
                             style = TextStyle(
                                 fontWeight = FontWeight.Bold,
-                                fontSize = 25.sp
+                                fontSize = 20.sp
                             )
                         )
                         Spacer(modifier = Modifier.height(16.dp))
@@ -118,7 +118,7 @@ fun CardScreen(
                         Text(
                             text = stringResource(id = R.string.show_answer),
                             modifier = Modifier.align(Alignment.BottomCenter),
-                            style = TextStyle(fontSize = 15.sp)
+                            style = TextStyle(fontSize = 12.sp)
                         )
                     }
                 }
@@ -141,7 +141,7 @@ fun CardScreen(
                             text = stringResource(cardsList[currentIndex].answers),
                             textAlign = TextAlign.Center,
                             style = TextStyle(
-                                fontSize = 24.sp,
+                                fontSize = 22.sp,
                             ),
                             modifier = Modifier
                                 .align(Alignment.CenterHorizontally) // Align the text vertically in the box
@@ -151,7 +151,7 @@ fun CardScreen(
                         Spacer(modifier = Modifier.weight(1f))
                         Text(
                             text = stringResource(id = R.string.show_question),
-                            style = TextStyle(fontSize = 15.sp),
+                            style = TextStyle(fontSize = 11.sp),
                             modifier = Modifier
                                 .align(Alignment.CenterHorizontally)
                                 .padding(5.dp)
