@@ -51,7 +51,7 @@ fun QuizScreen(
         .fillMaxWidth()
         .padding(end = 30.dp, start = 30.dp, top = 10.dp)
 ){
-    var enableClick by rememberSaveable { mutableIntStateOf(0) } //MAKE IT VIEWMODEL
+    var enableClick by rememberSaveable { mutableIntStateOf(0) }
     var answer by rememberSaveable { mutableStateOf(false) }
 
     Column(
@@ -165,9 +165,7 @@ private fun FinalScoreDialog(
 ) {
     AlertDialog(
         onDismissRequest = {
-            // Dismiss the dialog when the user clicks outside the dialog or on the back
-            // button. If you want to disable that functionality, simply use an empty
-            // onCloseRequest.
+
         },
         title = { Text(text = stringResource(R.string.congratulations)) },
         text = { Text(text = stringResource(R.string.you_scored, score)) },
