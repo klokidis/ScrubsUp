@@ -57,7 +57,7 @@ fun StartingScreen(
                 composition = composition,
                 modifier = Modifier.size(280.dp),
                 iterations = LottieConstants.IterateForever
-                )
+            )
 
         }
 

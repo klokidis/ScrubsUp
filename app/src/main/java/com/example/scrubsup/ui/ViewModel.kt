@@ -108,7 +108,6 @@ class ViewModel : ViewModel() {
         if (updatedScore == Datasource().MAX_QUESTIONS){
             _uiState.update { currentState ->
                 currentState.copy(
-                    answerCount = updatedScore,
                     rightAnswerCount = rightAnswersUpdated,
                     isOver = true
                 )
