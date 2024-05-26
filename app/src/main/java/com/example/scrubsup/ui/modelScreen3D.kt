@@ -2,6 +2,7 @@
 
 package com.example.scrubsup.ui
 
+import android.annotation.SuppressLint
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
@@ -21,12 +22,9 @@ import androidx.compose.material3.Tab
 import androidx.compose.material3.TabRow
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -44,37 +42,17 @@ fun ModelScreen3D(html: String, details: List<Pair<Int, Int>>){
     }
 }
 
+@SuppressLint("SetJavaScriptEnabled")
 @Composable
 fun WebViewScreen(html: String) {
-    var webViewRef by remember { mutableStateOf<WebView?>(null) }
-
-    val cleanupWebView: () -> Unit = {
-        webViewRef?.let { webView ->
-            webView.clearCache(true) // Clear cache
-            webView.removeAllViews()
-            webView.destroy()
-        }
-    }
-
-    DisposableEffect(Unit) {
-        // When the composable is disposed, clean up the WebView
-        onDispose {
-            cleanupWebView()
-        }
-    }
-
     AndroidView(
         factory = { context ->
             WebView(context).apply {
                 settings.javaScriptEnabled = true
                 webViewClient = WebViewClient()
-                settings.domStorageEnabled = false
-                settings.cacheMode = WebSettings.LOAD_NO_CACHE
             }
         },
         update = { webView ->
-            webViewRef = webView
-            // Load HTML from secure source if possible (local asset, remote server)
             webView.loadDataWithBaseURL(null, html, "text/html", "UTF-8", null)
         },
     )
