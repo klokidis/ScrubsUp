@@ -3,7 +3,6 @@
 package com.example.scrubsup.ui
 
 import android.annotation.SuppressLint
-import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.compose.foundation.ExperimentalFoundationApi
