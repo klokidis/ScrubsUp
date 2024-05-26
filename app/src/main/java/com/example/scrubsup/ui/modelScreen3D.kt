@@ -91,11 +91,6 @@ fun TabRowBar(html: String, details: List<Pair<Int, Int>>){
     LaunchedEffect(selectedTabIndex){
         pagerState.animateScrollToPage(selectedTabIndex)
     }
-    LaunchedEffect(pagerState.currentPage,pagerState.isScrollInProgress) {
-        if(!pagerState.isScrollInProgress){
-            selectedTabIndex = pagerState.currentPage
-        }
-    }
     Column(Modifier.background(MaterialTheme.colorScheme.background)) {
         TabRow(selectedTabIndex = selectedTabIndex) {
             ViewModel().tabItems.forEachIndexed {index, item ->
