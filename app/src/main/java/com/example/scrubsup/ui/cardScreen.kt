@@ -35,6 +35,7 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.ui.res.stringResource
 import com.example.scrubsup.R
 import com.example.scrubsup.model.Cards
@@ -170,6 +171,7 @@ fun CardScreen(
         ) {
             // Previous button click handler
             Button(
+                colors = ButtonDefaults.filledTonalButtonColors(),
                 modifier = Modifier
                     .height(40.dp)
                     .width(133.dp),
@@ -187,6 +189,7 @@ fun CardScreen(
             }
             // Next button click handler
             Button(
+                colors = ButtonDefaults.filledTonalButtonColors(),
                 modifier = Modifier
                     .height(40.dp)
                     .width(127.dp),
