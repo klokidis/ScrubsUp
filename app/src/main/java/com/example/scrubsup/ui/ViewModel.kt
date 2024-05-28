@@ -61,7 +61,7 @@ class ViewModel : ViewModel() {
     fun chooseCardTheme(cardSubject: Int){
         _uiState.update { currentState ->
             currentState.copy(
-                isQuestionShown = false,
+                isQuestionShown = true,
                 currentIndex = 0,
                 memoryCards = cardQuestions.filter { it.subject == cardSubject },
             )
