@@ -58,7 +58,6 @@ fun StartingScreen(
                 modifier = Modifier.size(280.dp),
                 iterations = LottieConstants.IterateForever
             )
-
         }
 
         CategoryCard(

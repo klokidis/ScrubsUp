@@ -89,6 +89,7 @@ fun ScrubsUpApp(
     ){ innerPadding ->
         val uiState by viewModel.uiState.collectAsState()
 
+
         NavHost(
             navController = navController,
             startDestination = ScrubScreen.Start.name,
